@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chollo Berri - Laster / Pronto</title>
+  <meta name="google" content="notranslate">
   <style>
     :root {
       --primary-color: #f5532d;
@@ -99,6 +100,24 @@
       background: #1ebe5d;
       transform: scale(1.05);
     }
+    .flash-message {
+      position: fixed;
+      top: 10px;
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      z-index: 999;
+      animation: fadeOut 3s ease-in forwards;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; display: none; }
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 32px;
@@ -125,10 +144,10 @@
   </style>
   <script>
     const translations = {
-      eu: ["🚧 Laster!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contacta por WhatsApp"],
-      es: ["🚧 ¡Pronto!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contacta por WhatsApp"],
-      fr: ["🚧 Bientôt !", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contactez-nous sur WhatsApp"],
-      en: ["🚧 Soon!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contact via WhatsApp"]
+      eu: ["🚧 Laster!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Jarri gurekin harremanetan WhatsApp bidez", "Hizkuntza aldatu da: EUSKARA"],
+      es: ["🚧 ¡Pronto!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contacta por WhatsApp", "Idioma cambiado a: ESPAÑOL"],
+      fr: ["🚧 Bientôt !", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contactez-nous sur WhatsApp", "Langue changée en : FRANÇAIS"],
+      en: ["🚧 Soon!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contact via WhatsApp", "Language switched to: ENGLISH"]
     };
 
     function switchLanguage(lang) {
@@ -139,7 +158,23 @@
       ps[1].textContent = data[1];
       ps[2].textContent = data[2];
       wa.textContent = data[3];
+
+      const flash = document.createElement("div");
+      flash.className = "flash-message";
+      flash.textContent = data[4];
+      document.body.appendChild(flash);
+      setTimeout(() => flash.remove(), 3000);
     }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const lang = navigator.language.slice(0, 2);
+      const supported = Object.keys(translations);
+      if (supported.includes(lang)) {
+        switchLanguage(lang);
+      } else {
+        switchLanguage("en");
+      }
+    });
   </script>
 </head>
 <body>
@@ -160,7 +195,7 @@
   </div>
 
   <div class="whatsapp">
-    <a href="https://wa.me/34632759513" target="_blank">Contacta por WhatsApp</a>
+    <a href="https://wa.me/34632759513" target="_blank">Jarri gurekin harremanetan WhatsApp bidez</a>
   </div>
 
   <div class="languages"></div>
