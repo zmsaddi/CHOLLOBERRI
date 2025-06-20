@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chollo Berri - Laster / Pronto</title>
+  <style>
+    :root {
+      --primary-color: #f5532d;
+      --secondary-color: #000000;
+      --background-color: #fff8f6;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background-color);
+      font-family: Arial, sans-serif;
+      color: var(--secondary-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .logo {
+      max-width: 320px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    p {
+      font-size: 22px;
+      margin: 8px 0;
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .languages {
+      margin-top: 40px;
+      font-size: 18px;
+      font-style: italic;
+      color: #666;
+    }
+    .whatsapp {
+      margin-top: 20px;
+    }
+    .whatsapp a {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .whatsapp a:hover {
+      background: #1ebe5d;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 18px;
+      }
+      .contact {
+        font-size: 16px;
+      }
+      .languages {
+        font-size: 16px;
+      }
+      .whatsapp a {
+        font-size: 18px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="logo.png" alt="Chollo Berri Logo">
+  <h1>Chollo Berri</h1>
+  <p>🚧 Laster!</p>
+  <p>🚧 ¡Pronto!</p>
+  <p>🚧 Bientôt !</p>
+  <p>🚧 Soon!</p>
+
+  <div class="contact">
+    <p>✉️ <strong>erosketa@cholloberri.eus</strong></p>
+    <p>📞 WhatsApp: +34 632 759 513</p>
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/34632759513" target="_blank">Contacta por WhatsApp</a>
+  </div>
+
+  <div class="languages">
+    Disponible pronto en euskara, español, français e inglés.
+  </div>
+</body>
+</html>
