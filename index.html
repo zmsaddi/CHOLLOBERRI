@@ -31,6 +31,24 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .language-switcher img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .language-switcher img:hover {
+      transform: scale(1.1);
+    }
+
     .logo {
       max-width: 320px;
       margin-bottom: 30px;
@@ -53,26 +71,7 @@
       font-size: 18px;
       font-style: italic;
       color: #666;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .language-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: transform 0.3s ease;
-    }
-    .language-item:hover {
-      transform: scale(1.05);
-    }
-    .language-item img {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: none;
     }
     .whatsapp {
       margin-top: 20px;
@@ -102,30 +101,45 @@
       .contact {
         font-size: 16px;
       }
-      .languages {
-        font-size: 16px;
-      }
       .whatsapp a {
         font-size: 18px;
         padding: 12px 24px;
       }
-      .language-item img {
-        width: 36px;
-        height: 36px;
-      }
     }
   </style>
+  <script>
+    const translations = {
+      eu: ["🚧 Laster!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contacta por WhatsApp"],
+      es: ["🚧 ¡Pronto!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contacta por WhatsApp"],
+      fr: ["🚧 Bientôt !", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contactez-nous sur WhatsApp"],
+      en: ["🚧 Soon!", "✉️ erosketa@cholloberri.eus", "📞 WhatsApp: +34 632 759 513", "Contact via WhatsApp"]
+    };
+
+    function switchLanguage(lang) {
+      const ps = document.querySelectorAll(".translated p");
+      const wa = document.querySelector(".whatsapp a");
+      const data = translations[lang];
+      ps[0].textContent = data[0];
+      ps[1].textContent = data[1];
+      ps[2].textContent = data[2];
+      wa.textContent = data[3];
+    }
+  </script>
 </head>
 <body>
+  <div class="language-switcher">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_the_Basque_Country.svg/32px-Flag_of_the_Basque_Country.svg.png" alt="Euskara" onclick="switchLanguage('eu')">
+    <img src="https://flagcdn.com/h32/es.png" alt="Español" onclick="switchLanguage('es')">
+    <img src="https://flagcdn.com/h32/fr.png" alt="Français" onclick="switchLanguage('fr')">
+    <img src="https://flagcdn.com/h32/gb.png" alt="English" onclick="switchLanguage('en')">
+  </div>
+
   <img class="logo" src="logo.png" alt="Chollo Berri Logo">
   <h1>Chollo Berri</h1>
-  <p>🚧 Laster!</p>
-  <p>🚧 ¡Pronto!</p>
-  <p>🚧 Bientôt !</p>
-  <p>🚧 Soon!</p>
 
-  <div class="contact">
-    <p>✉️ <strong>erosketa@cholloberri.eus</strong></p>
+  <div class="translated">
+    <p>🚧 Laster!</p>
+    <p>✉️ erosketa@cholloberri.eus</p>
     <p>📞 WhatsApp: +34 632 759 513</p>
   </div>
 
@@ -133,11 +147,6 @@
     <a href="https://wa.me/34632759513" target="_blank">Contacta por WhatsApp</a>
   </div>
 
-  <div class="languages">
-    <div class="language-item"><img src="https://flagcdn.com/h40/eu.png" alt="Euskara">EUSKARA</div>
-    <div class="language-item"><img src="https://flagcdn.com/h40/es.png" alt="Español">ESPAÑOL</div>
-    <div class="language-item"><img src="https://flagcdn.com/h40/fr.png" alt="Français">FRANÇAIS</div>
-    <div class="language-item"><img src="https://flagcdn.com/h40/gb.png" alt="English">ENGLISH</div>
-  </div>
+  <div class="languages"></div>
 </body>
 </html>
