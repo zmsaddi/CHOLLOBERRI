@@ -34,24 +34,32 @@
     .language-switcher {
       position: absolute;
       top: 20px;
-      right: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
-      gap: 10px;
+      gap: 15px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     .language-switcher img {
-      width: 32px;
+      width: 48px;
       height: 32px;
-      border-radius: 50%;
+      border-radius: 4px;
+      object-fit: cover;
       cursor: pointer;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .language-switcher img:hover {
       transform: scale(1.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     }
 
     .logo {
       max-width: 320px;
       margin-bottom: 30px;
+      margin-top: 80px;
     }
     h1 {
       font-size: 40px;
@@ -105,6 +113,14 @@
         font-size: 18px;
         padding: 12px 24px;
       }
+      .language-switcher {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .language-switcher img {
+        width: 40px;
+        height: 28px;
+      }
     }
   </style>
   <script>
@@ -128,10 +144,10 @@
 </head>
 <body>
   <div class="language-switcher">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_the_Basque_Country.svg/32px-Flag_of_the_Basque_Country.svg.png" alt="Euskara" onclick="switchLanguage('eu')">
-    <img src="https://flagcdn.com/h32/es.png" alt="Español" onclick="switchLanguage('es')">
-    <img src="https://flagcdn.com/h32/fr.png" alt="Français" onclick="switchLanguage('fr')">
-    <img src="https://flagcdn.com/h32/gb.png" alt="English" onclick="switchLanguage('en')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg" alt="Euskara" onclick="switchLanguage('eu')">
+    <img src="https://flagcdn.com/es.svg" alt="Español" onclick="switchLanguage('es')">
+    <img src="https://flagcdn.com/fr.svg" alt="Français" onclick="switchLanguage('fr')">
+    <img src="https://flagcdn.com/gb.svg" alt="English" onclick="switchLanguage('en')">
   </div>
 
   <img class="logo" src="logo.png" alt="Chollo Berri Logo">
