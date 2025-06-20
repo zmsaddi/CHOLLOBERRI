@@ -167,14 +167,14 @@
     }
 
     window.addEventListener("DOMContentLoaded", () => {
-      const lang = navigator.language.slice(0, 2);
-      const supported = Object.keys(translations);
-      if (supported.includes(lang)) {
-        switchLanguage(lang);
-      } else {
-        switchLanguage("en");
-      }
-    });
+  const lang = navigator.language.slice(0, 2);
+  const supported = Object.keys(translations);
+  if (supported.includes(lang)) {
+    switchLanguage(lang);
+  } else {
+    switchLanguage("eu"); // default to Basque if not detected
+  }
+});
   </script>
 </head>
 <body>
