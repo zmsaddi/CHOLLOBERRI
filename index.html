@@ -23,7 +23,14 @@
       align-items: center;
       min-height: 100vh;
       text-align: center;
+      animation: fadeIn 1.5s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .logo {
       max-width: 320px;
       margin-bottom: 30px;
@@ -46,6 +53,26 @@
       font-size: 18px;
       font-style: italic;
       color: #666;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .language-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease;
+    }
+    .language-item:hover {
+      transform: scale(1.05);
+    }
+    .language-item img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     .whatsapp {
       margin-top: 20px;
@@ -59,10 +86,11 @@
       font-size: 20px;
       font-weight: bold;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.3s;
     }
     .whatsapp a:hover {
       background: #1ebe5d;
+      transform: scale(1.05);
     }
     @media (max-width: 600px) {
       h1 {
@@ -80,6 +108,10 @@
       .whatsapp a {
         font-size: 18px;
         padding: 12px 24px;
+      }
+      .language-item img {
+        width: 36px;
+        height: 36px;
       }
     }
   </style>
@@ -102,7 +134,10 @@
   </div>
 
   <div class="languages">
-    Disponible pronto en euskara, español, français e inglés.
+    <div class="language-item"><img src="https://flagcdn.com/h40/eu.png" alt="Euskara">EUSKARA</div>
+    <div class="language-item"><img src="https://flagcdn.com/h40/es.png" alt="Español">ESPAÑOL</div>
+    <div class="language-item"><img src="https://flagcdn.com/h40/fr.png" alt="Français">FRANÇAIS</div>
+    <div class="language-item"><img src="https://flagcdn.com/h40/gb.png" alt="English">ENGLISH</div>
   </div>
 </body>
 </html>
