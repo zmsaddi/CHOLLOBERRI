@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Hasiera",
+    "products": "Produktuak",
+    "about": "Guri Buruz",
+    "contact": "Kontaktua"
+  },
+  "buttons": {
+    "order_whatsapp": "WhatsApp bidez eskatu",
+    "view_details": "Xehetasunak ikusi",
+    "browse_products": "Produktu guztiak ikusi",
+    "start_chat": "WhatsApp txata hasi",
+    "send_email": "Email bidali"
+  },
+  "home": {
+    "hero_title": "Etorkizuna Gidatzen",
+    "hero_subtitle": "Hiri Garbiago eta Bizitza Hobeetarako Gure Ikuspegia",
+    "hero_description": "Aurkitu etorkizun jasangarriago batera mugitzeko modua aldatzen duten produktu berritzaileak.",
+    "featured_products": "Produktu Nabarmendutakoak",
+    "why_choose_us": "Zergatik Aukeratu Gu?",
+    "sustainability": "Jasangarritasuna",
+    "sustainability_desc": "Etorkizun berdiago batekin konprometituta",
+    "quality": "Kalitatea",
+    "quality_desc": "Kalitate handieneko produktuak",
+    "innovation": "Berrikuntza",
+    "innovation_desc": "Abangoardiako teknologia"
+  },
+  "products": {
+    "title": "Gure Produktuak",
+    "description": "Arakatu etorkizun jasangarriago baterako diseinatutako gure produktu berritzaileen hautaketa."
+  },
+  "about": {
+    "title": "Guri Buruz",
+    "subtitle": "Etorkizuna Gidatzen: Hiri Garbiago eta Bizitza Hobeetarako Gure Ikuspegia"
+  },
+  "contact": {
+    "title": "Jarri Gurekin Harremanetan",
+    "subtitle": "Laguntzeko Gaude",
+    "description": "Gure produktuei buruzko galderaren bat baduzu, mugikortasun jasangarriaren etorkizunerako ideia berritzaileren bat, edo besterik gabe kaixo esan nahi baduzu, zure berri izatea gustatuko litzaiguke.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Erantzunik azkarrena lortzeko, bereziki eskaerei edo produktuei buruzko kontsultetarako.",
+    "email_title": "Email",
+    "email_desc": "Galdera orokorretarako, lankidetzetarako edo xehetasun gehiago behar dituzten kontsultetarako. Gure helburua da mezu guztiei 24 laneguneko epean erantzutea."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. Eskubide guztiak gordeta.",
+    "quick_links": "Esteka Azkarrak"
+  }
+}
+

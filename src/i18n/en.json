@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "order_whatsapp": "Order via WhatsApp",
+    "view_details": "View Details",
+    "browse_products": "View All Products",
+    "start_chat": "Start Chat on WhatsApp",
+    "send_email": "Send Email"
+  },
+  "home": {
+    "hero_title": "Driving the Future",
+    "hero_subtitle": "Our Vision for Cleaner Cities and Better Lives",
+    "hero_description": "Discover innovative products that transform the way we move towards a more sustainable future.",
+    "featured_products": "Featured Products",
+    "why_choose_us": "Why Choose Us?",
+    "sustainability": "Sustainability",
+    "sustainability_desc": "Committed to a greener future",
+    "quality": "Quality",
+    "quality_desc": "Highest quality products",
+    "innovation": "Innovation",
+    "innovation_desc": "Cutting-edge technology"
+  },
+  "products": {
+    "title": "Our Products",
+    "description": "Explore our selection of innovative products designed for a more sustainable future."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Driving the Future: Our Vision for Cleaner Cities and Better Lives"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're Here to Help",
+    "description": "Whether you have a question about our products, an innovative idea for the future of sustainable mobility, or you just want to say hello, we'd love to hear from you.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "For the fastest response, especially for inquiries about orders or products.",
+    "email_title": "Email",
+    "email_desc": "For general questions, partnerships, or inquiries that require more detail. We aim to respond to all emails within 24 business hours."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. All rights reserved.",
+    "quick_links": "Quick Links"
+  }
+}
+

@@ -1,0 +1,75 @@
+{
+  "id": "eco-bike-urban",
+  "slug": "eco-bike-urban",
+  "image": "/images/eco-bike-urban.jpg",
+  "price": "899",
+  "currency": "€",
+  "featured": true,
+  "es": {
+    "name": "Bicicleta Eléctrica Urbana EcoBike",
+    "description": "La perfecta combinación de estilo, comodidad y sostenibilidad. Nuestra bicicleta eléctrica urbana está diseñada para transformar tu experiencia de movilidad en la ciudad. Con una autonomía de hasta 80 km y un motor silencioso de alta eficiencia, podrás moverte por la ciudad sin esfuerzo y sin emisiones. Su diseño elegante y moderno se adapta perfectamente al entorno urbano, mientras que su construcción robusta garantiza durabilidad y seguridad en cada trayecto.",
+    "features": [
+      "Autonomía de hasta 80 km",
+      "Motor eléctrico silencioso",
+      "Diseño urbano elegante",
+      "Batería extraíble",
+      "Sistema de frenado regenerativo"
+    ]
+  },
+  "eu": {
+    "name": "EcoBike Hiri Bizikleta Elektrikoa",
+    "description": "Estilo, erosotasun eta jasangarritasunaren konbinazio perfektua. Gure hiri bizikleta elektrikoa hiriko mugikortasun-esperientzia aldatzeko diseinatuta dago. 80 km-ko autonomia eta eraginkortasun handiko motor isil batekin, hiriko barrena ahalegin eta isurkinik gabe mugitu ahal izango zara. Bere diseinu dotore eta modernoa hiri-ingurunearekin ezin hobeto egokitzen da, eta bere eraikuntza sendoak iraunkortasuna eta segurtasuna bermatzen ditu ibilbide bakoitzean.",
+    "features": [
+      "80 km-ko autonomia",
+      "Motor elektriko isila",
+      "Hiri diseinu dotorea",
+      "Bateria kengarria",
+      "Balazta erregeneratiboaren sistema"
+    ]
+  },
+  "fr": {
+    "name": "Vélo Électrique Urbain EcoBike",
+    "description": "La combinaison parfaite de style, confort et durabilité. Notre vélo électrique urbain est conçu pour transformer votre expérience de mobilité en ville. Avec une autonomie allant jusqu'à 80 km et un moteur silencieux haute efficacité, vous pourrez vous déplacer en ville sans effort et sans émissions. Son design élégant et moderne s'adapte parfaitement à l'environnement urbain, tandis que sa construction robuste garantit durabilité et sécurité à chaque trajet.",
+    "features": [
+      "Autonomie jusqu'à 80 km",
+      "Moteur électrique silencieux",
+      "Design urbain élégant",
+      "Batterie amovible",
+      "Système de freinage régénératif"
+    ]
+  },
+  "en": {
+    "name": "EcoBike Urban Electric Bicycle",
+    "description": "The perfect combination of style, comfort, and sustainability. Our urban electric bicycle is designed to transform your city mobility experience. With a range of up to 80 km and a silent high-efficiency motor, you can move through the city effortlessly and emission-free. Its elegant and modern design perfectly adapts to the urban environment, while its robust construction ensures durability and safety on every journey.",
+    "features": [
+      "Range up to 80 km",
+      "Silent electric motor",
+      "Elegant urban design",
+      "Removable battery",
+      "Regenerative braking system"
+    ]
+  },
+  "nl": {
+    "name": "EcoBike Stedelijke Elektrische Fiets",
+    "description": "De perfecte combinatie van stijl, comfort en duurzaamheid. Onze stedelijke elektrische fiets is ontworpen om uw stadsmobiliteitservaring te transformeren. Met een bereik tot 80 km en een stille, zeer efficiënte motor kunt u moeiteloos en emissievrij door de stad bewegen. Het elegante en moderne ontwerp past perfect bij de stedelijke omgeving, terwijl de robuuste constructie duurzaamheid en veiligheid op elke reis garandeert.",
+    "features": [
+      "Bereik tot 80 km",
+      "Stille elektrische motor",
+      "Elegant stedelijk ontwerp",
+      "Uitneembare batterij",
+      "Regeneratief remsysteem"
+    ]
+  },
+  "de": {
+    "name": "EcoBike Städtisches Elektrofahrrad",
+    "description": "Die perfekte Kombination aus Stil, Komfort und Nachhaltigkeit. Unser städtisches Elektrofahrrad ist darauf ausgelegt, Ihr Stadtmobilitätserlebnis zu transformieren. Mit einer Reichweite von bis zu 80 km und einem leisen, hocheffizienten Motor können Sie sich mühelos und emissionsfrei durch die Stadt bewegen. Sein elegantes und modernes Design passt perfekt zur städtischen Umgebung, während seine robuste Konstruktion Langlebigkeit und Sicherheit auf jeder Fahrt gewährleistet.",
+    "features": [
+      "Reichweite bis zu 80 km",
+      "Leiser Elektromotor",
+      "Elegantes städtisches Design",
+      "Herausnehmbare Batterie",
+      "Regeneratives Bremssystem"
+    ]
+  }
+}
+

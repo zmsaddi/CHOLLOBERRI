@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "order_whatsapp": "Commander par WhatsApp",
+    "view_details": "Voir les Détails",
+    "browse_products": "Voir Tous les Produits",
+    "start_chat": "Démarrer la Conversation sur WhatsApp",
+    "send_email": "Envoyer un Email"
+  },
+  "home": {
+    "hero_title": "Piloter l'Avenir",
+    "hero_subtitle": "Notre Vision pour des Villes Plus Propres et des Vies Meilleures",
+    "hero_description": "Découvrez des produits innovants qui transforment notre façon de nous déplacer vers un avenir plus durable.",
+    "featured_products": "Produits en Vedette",
+    "why_choose_us": "Pourquoi Nous Choisir?",
+    "sustainability": "Durabilité",
+    "sustainability_desc": "Engagés pour un avenir plus vert",
+    "quality": "Qualité",
+    "quality_desc": "Produits de la plus haute qualité",
+    "innovation": "Innovation",
+    "innovation_desc": "Technologie de pointe"
+  },
+  "products": {
+    "title": "Nos Produits",
+    "description": "Explorez notre sélection de produits innovants conçus pour un avenir plus durable."
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "Piloter l'Avenir : Notre Vision pour des Villes Plus Propres et des Vies Meilleures"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous Sommes Là pour Vous Aider",
+    "description": "Que vous ayez une question sur nos produits, une idée innovante pour l'avenir de la mobilité durable, ou que vous souhaitiez simplement dire bonjour, nous serions ravis de vous entendre.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Pour la réponse la plus rapide, en particulier pour les questions concernant les commandes ou les produits.",
+    "email_title": "Email",
+    "email_desc": "Pour les questions générales, les partenariats ou les demandes nécessitant plus de détails. Nous nous efforçons de répondre à tous les e-mails dans les 24 heures ouvrables."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. Tous droits réservés.",
+    "quick_links": "Liens Rapides"
+  }
+}
+

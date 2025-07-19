@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "buttons": {
+    "order_whatsapp": "Pedir por WhatsApp",
+    "view_details": "Ver Detalles",
+    "browse_products": "Ver Todos los Productos",
+    "start_chat": "Iniciar Chat en WhatsApp",
+    "send_email": "Enviar Email"
+  },
+  "home": {
+    "hero_title": "Liderando el Futuro",
+    "hero_subtitle": "Nuestra Visión para Ciudades Más Limpias y Vidas Mejores",
+    "hero_description": "Descubre productos innovadores que transforman la manera en que nos movemos hacia un futuro más sostenible.",
+    "featured_products": "Productos Destacados",
+    "why_choose_us": "¿Por Qué Elegirnos?",
+    "sustainability": "Sostenibilidad",
+    "sustainability_desc": "Comprometidos con un futuro más verde",
+    "quality": "Calidad",
+    "quality_desc": "Productos de la más alta calidad",
+    "innovation": "Innovación",
+    "innovation_desc": "Tecnología de vanguardia"
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "description": "Explora nuestra selección de productos innovadores diseñados para un futuro más sostenible."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Liderando el Futuro: Nuestra Visión para Ciudades Más Limpias y Vidas Mejores"
+  },
+  "contact": {
+    "title": "Contacta con Nosotros",
+    "subtitle": "Estamos Aquí para Ayudar",
+    "description": "Si tienes una pregunta sobre nuestros productos, una idea innovadora para el futuro de la movilidad sostenible, o simplemente quieres saludar, nos encantaría escucharte.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Para la respuesta más rápida, especialmente para consultas sobre pedidos o productos.",
+    "email_title": "Email",
+    "email_desc": "Para preguntas generales, colaboraciones o consultas que requieran más detalle. Nuestro objetivo es responder a todos los correos en 24 horas laborables."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. Todos los derechos reservados.",
+    "quick_links": "Enlaces Rápidos"
+  }
+}
+

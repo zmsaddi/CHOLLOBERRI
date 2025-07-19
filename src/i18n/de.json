@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über Uns",
+    "contact": "Kontakt"
+  },
+  "buttons": {
+    "order_whatsapp": "Über WhatsApp bestellen",
+    "view_details": "Details anzeigen",
+    "browse_products": "Alle Produkte anzeigen",
+    "start_chat": "Chat auf WhatsApp starten",
+    "send_email": "E-Mail senden"
+  },
+  "home": {
+    "hero_title": "Die Zukunft Gestalten",
+    "hero_subtitle": "Unsere Vision für Sauberere Städte und Bessere Leben",
+    "hero_description": "Entdecken Sie innovative Produkte, die die Art und Weise transformieren, wie wir uns in eine nachhaltigere Zukunft bewegen.",
+    "featured_products": "Ausgewählte Produkte",
+    "why_choose_us": "Warum Uns Wählen?",
+    "sustainability": "Nachhaltigkeit",
+    "sustainability_desc": "Verpflichtet zu einer grüneren Zukunft",
+    "quality": "Qualität",
+    "quality_desc": "Produkte höchster Qualität",
+    "innovation": "Innovation",
+    "innovation_desc": "Modernste Technologie"
+  },
+  "products": {
+    "title": "Unsere Produkte",
+    "description": "Erkunden Sie unsere Auswahl an innovativen Produkten, die für eine nachhaltigere Zukunft entwickelt wurden."
+  },
+  "about": {
+    "title": "Über Uns",
+    "subtitle": "Die Zukunft Gestalten: Unsere Vision für Sauberere Städte und Bessere Leben"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie Uns",
+    "subtitle": "Wir Sind Hier, um zu Helfen",
+    "description": "Ob Sie eine Frage zu unseren Produkten haben, eine innovative Idee für die Zukunft der nachhaltigen Mobilität oder einfach nur Hallo sagen möchten, wir würden uns freuen, von Ihnen zu hören.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Für die schnellste Antwort, insbesondere bei Anfragen zu Bestellungen oder Produkten.",
+    "email_title": "E-Mail",
+    "email_desc": "Für allgemeine Fragen, Partnerschaften oder Anfragen, die mehr Details erfordern. Wir bemühen uns, alle E-Mails innerhalb von 24 Geschäftsstunden zu beantworten."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. Alle Rechte vorbehalten.",
+    "quick_links": "Schnelle Links"
+  }
+}
+

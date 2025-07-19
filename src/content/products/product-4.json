@@ -1,0 +1,81 @@
+{
+  "id": "electric-skateboard",
+  "slug": "electric-skateboard",
+  "image": "/images/electric-skateboard.jpg",
+  "price": "399",
+  "currency": "€",
+  "featured": true,
+  "es": {
+    "name": "Monopatín Eléctrico Urban Rider",
+    "description": "Experimenta la libertad de movimiento con nuestro monopatín eléctrico Urban Rider. Diseñado para los amantes de la adrenalina y la movilidad urbana, este skateboard eléctrico combina la emoción del skateboarding tradicional con la comodidad de la propulsión eléctrica. Su control remoto inalámbrico te permite ajustar la velocidad y el frenado con precisión, mientras que sus ruedas de alta calidad garantizan un agarre excepcional en cualquier superficie. Perfecto para distancias cortas y medias, es la opción ideal para estudiantes y jóvenes profesionales.",
+    "features": [
+      "Velocidad máxima 30 km/h",
+      "Control remoto inalámbrico",
+      "Autonomía de 20 km",
+      "Ruedas de alta calidad",
+      "Diseño ultraligero",
+      "Frenado regenerativo"
+    ]
+  },
+  "eu": {
+    "name": "Urban Rider Skate Elektrikoa",
+    "description": "Bizitu mugimenduen askatasuna gure Urban Rider skate elektrikoarekin. Adrenalina eta hiri-mugikortasunaren zaletuentzako diseinatuta, skate elektriko honek skateboard tradizionalaren emozio eta propultsio elektrikoaren erosotasuna konbinatzen ditu. Bere urruneko kontrol haririk gabearekin abiadura eta balazta zehaztasunez doitu ditzakezu, eta bere kalitate handiko gurpileek edozein azaleran atxikitze bikaina bermatzen dute. Distantzia labur eta ertainetarako ezin hobea, ikasle eta profesional gazteentzako aukera ideala da.",
+    "features": [
+      "Gehienezko abiadura 30 km/h",
+      "Urruneko kontrol haririk gabea",
+      "20 km-ko autonomia",
+      "Kalitate handiko gurpilak",
+      "Diseinu ultraarina",
+      "Balazta erregeneratiboa"
+    ]
+  },
+  "fr": {
+    "name": "Skateboard Électrique Urban Rider",
+    "description": "Expérimentez la liberté de mouvement avec notre skateboard électrique Urban Rider. Conçu pour les amateurs d'adrénaline et de mobilité urbaine, ce skateboard électrique combine l'émotion du skateboard traditionnel avec le confort de la propulsion électrique. Sa télécommande sans fil vous permet d'ajuster la vitesse et le freinage avec précision, tandis que ses roues de haute qualité garantissent une adhérence exceptionnelle sur toute surface. Parfait pour les distances courtes et moyennes, c'est l'option idéale pour les étudiants et les jeunes professionnels.",
+    "features": [
+      "Vitesse maximale 30 km/h",
+      "Télécommande sans fil",
+      "Autonomie de 20 km",
+      "Roues de haute qualité",
+      "Design ultra-léger",
+      "Freinage régénératif"
+    ]
+  },
+  "en": {
+    "name": "Urban Rider Electric Skateboard",
+    "description": "Experience the freedom of movement with our Urban Rider electric skateboard. Designed for adrenaline lovers and urban mobility enthusiasts, this electric skateboard combines the excitement of traditional skateboarding with the comfort of electric propulsion. Its wireless remote control allows you to adjust speed and braking with precision, while its high-quality wheels ensure exceptional grip on any surface. Perfect for short and medium distances, it's the ideal choice for students and young professionals.",
+    "features": [
+      "Maximum speed 30 km/h",
+      "Wireless remote control",
+      "20 km range",
+      "High-quality wheels",
+      "Ultra-lightweight design",
+      "Regenerative braking"
+    ]
+  },
+  "nl": {
+    "name": "Urban Rider Elektrisch Skateboard",
+    "description": "Ervaar de vrijheid van beweging met ons Urban Rider elektrische skateboard. Ontworpen voor adrenalineliefhebbers en stedelijke mobiliteitsliefhebbers, combineert dit elektrische skateboard de opwinding van traditioneel skateboarden met het comfort van elektrische voortstuwing. De draadloze afstandsbediening stelt u in staat snelheid en remmen met precisie aan te passen, terwijl de hoogwaardige wielen uitzonderlijke grip op elk oppervlak garanderen. Perfect voor korte en middellange afstanden, het is de ideale keuze voor studenten en jonge professionals.",
+    "features": [
+      "Maximale snelheid 30 km/u",
+      "Draadloze afstandsbediening",
+      "20 km bereik",
+      "Hoogwaardige wielen",
+      "Ultra-lichtgewicht ontwerp",
+      "Regeneratief remmen"
+    ]
+  },
+  "de": {
+    "name": "Urban Rider Elektrisches Skateboard",
+    "description": "Erleben Sie die Freiheit der Bewegung mit unserem Urban Rider elektrischen Skateboard. Entwickelt für Adrenalin-Liebhaber und urbane Mobilitäts-Enthusiasten, kombiniert dieses elektrische Skateboard die Aufregung des traditionellen Skateboardens mit dem Komfort des elektrischen Antriebs. Seine drahtlose Fernbedienung ermöglicht es Ihnen, Geschwindigkeit und Bremsen präzise einzustellen, während seine hochwertigen Räder außergewöhnlichen Grip auf jeder Oberfläche gewährleisten. Perfekt für kurze und mittlere Distanzen, ist es die ideale Wahl für Studenten und junge Berufstätige.",
+    "features": [
+      "Höchstgeschwindigkeit 30 km/h",
+      "Drahtlose Fernbedienung",
+      "20 km Reichweite",
+      "Hochwertige Räder",
+      "Ultra-leichtes Design",
+      "Regeneratives Bremsen"
+    ]
+  }
+}
+

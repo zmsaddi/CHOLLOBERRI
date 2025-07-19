@@ -1,0 +1,81 @@
+{
+  "id": "cargo-bike-family",
+  "slug": "cargo-bike-family",
+  "image": "/images/cargo-bike-family.jpg",
+  "price": "1299",
+  "currency": "€",
+  "featured": false,
+  "es": {
+    "name": "Bicicleta de Carga Familiar EcoFamily",
+    "description": "La solución perfecta para familias que buscan una alternativa sostenible y práctica al coche. Nuestra bicicleta de carga EcoFamily está diseñada para transportar hasta dos niños o 80 kg de carga de manera segura y cómoda. Con un motor eléctrico de alta potencia y una batería de larga duración, podrás realizar todos tus desplazamientos familiares sin esfuerzo. Su compartimento frontal está equipado con cinturones de seguridad, protección contra la lluvia y asientos acolchados para garantizar la máxima comodidad y seguridad de tus pequeños.",
+    "features": [
+      "Capacidad para 2 niños o 80 kg",
+      "Compartimento con cinturones de seguridad",
+      "Protección contra lluvia incluida",
+      "Motor de alta potencia",
+      "Autonomía de 60 km",
+      "Asientos acolchados"
+    ]
+  },
+  "eu": {
+    "name": "EcoFamily Familia Karga Bizikleta",
+    "description": "Autoaren alternatiba jasangarri eta praktiko bat bilatzen duten familientzako konponbide perfektua. Gure EcoFamily karga bizikleta bi haur edo 80 kg karga modu seguru eta erosoan garraiatzeko diseinatuta dago. Potentzia handiko motor elektriko bat eta iraupena luzeko bateria batekin, zure familia-desplazamendu guztiak ahalegin gabe egin ahal izango dituzu. Bere aurreko konpartimentua segurtasun-gerrikoekin, euriaren aurkako babesarekin eta eserleku kolxoituarekin hornituta dago zure txikienen erosotasun eta segurtasun maximoa bermatzeko.",
+    "features": [
+      "2 haurrentzako edo 80 kg-ko edukiera",
+      "Segurtasun-gerrikoekin konpartimentua",
+      "Euriaren aurkako babesa barne",
+      "Potentzia handiko motorea",
+      "60 km-ko autonomia",
+      "Eserleku kolxoituak"
+    ]
+  },
+  "fr": {
+    "name": "Vélo Cargo Familial EcoFamily",
+    "description": "La solution parfaite pour les familles qui cherchent une alternative durable et pratique à la voiture. Notre vélo cargo EcoFamily est conçu pour transporter jusqu'à deux enfants ou 80 kg de charge de manière sûre et confortable. Avec un moteur électrique haute puissance et une batterie longue durée, vous pourrez effectuer tous vos déplacements familiaux sans effort. Son compartiment avant est équipé de ceintures de sécurité, d'une protection contre la pluie et de sièges rembourrés pour garantir le maximum de confort et de sécurité à vos petits.",
+    "features": [
+      "Capacité pour 2 enfants ou 80 kg",
+      "Compartiment avec ceintures de sécurité",
+      "Protection contre la pluie incluse",
+      "Moteur haute puissance",
+      "Autonomie de 60 km",
+      "Sièges rembourrés"
+    ]
+  },
+  "en": {
+    "name": "EcoFamily Family Cargo Bike",
+    "description": "The perfect solution for families seeking a sustainable and practical alternative to the car. Our EcoFamily cargo bike is designed to transport up to two children or 80 kg of cargo safely and comfortably. With a high-power electric motor and long-lasting battery, you can make all your family trips effortlessly. Its front compartment is equipped with safety belts, rain protection, and padded seats to ensure maximum comfort and safety for your little ones.",
+    "features": [
+      "Capacity for 2 children or 80 kg",
+      "Compartment with safety belts",
+      "Rain protection included",
+      "High-power motor",
+      "60 km range",
+      "Padded seats"
+    ]
+  },
+  "nl": {
+    "name": "EcoFamily Familie Bakfiets",
+    "description": "De perfecte oplossing voor gezinnen die op zoek zijn naar een duurzaam en praktisch alternatief voor de auto. Onze EcoFamily bakfiets is ontworpen om tot twee kinderen of 80 kg lading veilig en comfortabel te vervoeren. Met een krachtige elektrische motor en een langdurige batterij kunt u al uw gezinsreizen moeiteloos maken. Het voorcompartiment is uitgerust met veiligheidsgordels, regenbescherming en gevoerde stoelen om maximaal comfort en veiligheid voor uw kleintjes te garanderen.",
+    "features": [
+      "Capaciteit voor 2 kinderen of 80 kg",
+      "Compartiment met veiligheidsgordels",
+      "Regenbescherming inbegrepen",
+      "Krachtige motor",
+      "60 km bereik",
+      "Gevoerde stoelen"
+    ]
+  },
+  "de": {
+    "name": "EcoFamily Familien-Lastenfahrrad",
+    "description": "Die perfekte Lösung für Familien, die eine nachhaltige und praktische Alternative zum Auto suchen. Unser EcoFamily Lastenfahrrad ist darauf ausgelegt, bis zu zwei Kinder oder 80 kg Ladung sicher und bequem zu transportieren. Mit einem leistungsstarken Elektromotor und einer langlebigen Batterie können Sie alle Ihre Familienfahrten mühelos bewältigen. Das vordere Abteil ist mit Sicherheitsgurten, Regenschutz und gepolsterten Sitzen ausgestattet, um maximalen Komfort und Sicherheit für Ihre Kleinen zu gewährleisten.",
+    "features": [
+      "Kapazität für 2 Kinder oder 80 kg",
+      "Abteil mit Sicherheitsgurten",
+      "Regenschutz inklusive",
+      "Leistungsstarker Motor",
+      "60 km Reichweite",
+      "Gepolsterte Sitze"
+    ]
+  }
+}
+

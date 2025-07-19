@@ -1,0 +1,210 @@
+---
+import { t } from '../i18n/index.js';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+export interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-brand">
+        <a href={`/${lang}/`} class="logo">
+          <span class="logo-text">Cholloberri</span>
+        </a>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href={`/${lang}/`} class="nav-link">{t(lang, 'nav.home')}</a>
+          </li>
+          <li class="nav-item">
+            <a href={`/${lang}/productos/`} class="nav-link">{t(lang, 'nav.products')}</a>
+          </li>
+          <li class="nav-item">
+            <a href={`/${lang}/sobre-nosotros/`} class="nav-link">{t(lang, 'nav.about')}</a>
+          </li>
+          <li class="nav-item">
+            <a href={`/${lang}/contacto/`} class="nav-link">{t(lang, 'nav.contact')}</a>
+          </li>
+        </ul>
+        
+        <div class="nav-actions">
+          <LanguageSwitcher lang={lang} currentPath={currentPath} />
+        </div>
+      </div>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .nav-brand .logo {
+    text-decoration: none;
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .logo-text {
+    background: linear-gradient(135deg, #10b981, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #10b981;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #10b981;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #374151;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
+    }
+    
+    .nav-menu {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      flex-direction: column;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateY(-100vh);
+      transition: transform 0.3s ease;
+    }
+    
+    .nav-menu.active {
+      transform: translateY(0);
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .nav-actions {
+      margin-top: 1rem;
+    }
+    
+    .nav-toggle.active .hamburger:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .nav-toggle.active .hamburger:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .nav-toggle.active .hamburger:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on a link
+      const navLinks = navMenu.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          navToggle.classList.remove('active');
+        });
+      });
+    }
+  });
+</script>
+

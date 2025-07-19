@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Producten",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "order_whatsapp": "Bestellen via WhatsApp",
+    "view_details": "Details Bekijken",
+    "browse_products": "Alle Producten Bekijken",
+    "start_chat": "Start Chat op WhatsApp",
+    "send_email": "Email Versturen"
+  },
+  "home": {
+    "hero_title": "De Toekomst Aandrijven",
+    "hero_subtitle": "Onze Visie voor Schonere Steden en Betere Levens",
+    "hero_description": "Ontdek innovatieve producten die de manier waarop we bewegen naar een duurzamere toekomst transformeren.",
+    "featured_products": "Uitgelichte Producten",
+    "why_choose_us": "Waarom Voor Ons Kiezen?",
+    "sustainability": "Duurzaamheid",
+    "sustainability_desc": "Toegewijd aan een groenere toekomst",
+    "quality": "Kwaliteit",
+    "quality_desc": "Producten van de hoogste kwaliteit",
+    "innovation": "Innovatie",
+    "innovation_desc": "Geavanceerde technologie"
+  },
+  "products": {
+    "title": "Onze Producten",
+    "description": "Verken onze selectie van innovatieve producten ontworpen voor een duurzamere toekomst."
+  },
+  "about": {
+    "title": "Over Ons",
+    "subtitle": "De Toekomst Aandrijven: Onze Visie voor Schonere Steden en Betere Levens"
+  },
+  "contact": {
+    "title": "Neem Contact Met Ons Op",
+    "subtitle": "We Staan Klaar om te Helpen",
+    "description": "Of u nu een vraag heeft over onze producten, een innovatief idee voor de toekomst van duurzame mobiliteit, of gewoon hallo wilt zeggen, we horen graag van u.",
+    "whatsapp_title": "WhatsApp",
+    "whatsapp_desc": "Voor de snelste reactie, met name voor vragen over bestellingen of producten.",
+    "email_title": "Email",
+    "email_desc": "Voor algemene vragen, partnerschappen of aanvragen die meer detail vereisen. We streven ernaar om alle e-mails binnen 24 kantooruren te beantwoorden."
+  },
+  "footer": {
+    "copyright": "© 2025 Cholloberri. Alle rechten voorbehouden.",
+    "quick_links": "Snelle Links"
+  }
+}
+

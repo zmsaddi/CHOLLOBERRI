@@ -1,0 +1,162 @@
+---
+import { t } from '../i18n/index.js';
+
+export interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-brand">
+          <h3 class="brand-name">Cholloberri</h3>
+          <p class="brand-description">
+            {lang === 'es' && 'Liderando el futuro hacia ciudades más limpias y vidas mejores.'}
+            {lang === 'eu' && 'Etorkizuna gidatzen hiri garbiago eta bizitza hobeetara.'}
+            {lang === 'fr' && 'Menant l\'avenir vers des villes plus propres et des vies meilleures.'}
+            {lang === 'en' && 'Leading the future towards cleaner cities and better lives.'}
+            {lang === 'nl' && 'De toekomst leiden naar schonere steden en betere levens.'}
+            {lang === 'de' && 'Die Zukunft zu saubereren Städten und besseren Leben führen.'}
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-title">{t(lang, 'footer.quick_links')}</h4>
+        <ul class="footer-links">
+          <li><a href={`/${lang}/`}>{t(lang, 'nav.home')}</a></li>
+          <li><a href={`/${lang}/productos/`}>{t(lang, 'nav.products')}</a></li>
+          <li><a href={`/${lang}/sobre-nosotros/`}>{t(lang, 'nav.about')}</a></li>
+          <li><a href={`/${lang}/contacto/`}>{t(lang, 'nav.contact')}</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-title">{t(lang, 'nav.contact')}</h4>
+        <div class="contact-info">
+          <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:info@cholloberri.eus">info@cholloberri.eus</a>
+          </p>
+          <p>
+            <strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer">
+              +34 600 000 000
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">{t(lang, 'footer.copyright')}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 60px 0 20px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    margin-bottom: 20px;
+  }
+  
+  .brand-name {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .brand-description {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-top: 12px;
+  }
+  
+  .footer-title {
+    color: #f9fafb;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #10b981;
+  }
+  
+  .contact-info p {
+    margin-bottom: 16px;
+    color: #d1d5db;
+  }
+  
+  .contact-info strong {
+    color: #f9fafb;
+  }
+  
+  .contact-info a {
+    color: #10b981;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .copyright {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+

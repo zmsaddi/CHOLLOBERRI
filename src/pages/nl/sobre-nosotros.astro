@@ -1,0 +1,243 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/index.js';
+
+const lang = 'nl';
+---
+
+<Layout title="Sobre Nosotros - Cholloberri" description="Conoce nuestra misión de liderar el futuro hacia ciudades más limpias y vidas mejores a través de la movilidad sostenible." lang={lang}>
+  <section class="section">
+    <div class="container">
+      <div class="about-hero">
+        <h1 class="about-title">{t(lang, 'about.title')}</h1>
+        <h2 class="about-subtitle">{t(lang, 'about.subtitle')}</h2>
+      </div>
+      
+      <div class="about-content">
+        <div class="content-text">
+          <p class="lead">
+            Nos hemos embarcado en un viaje audaz, impulsado por una visión simple pero poderosa: imaginar nuestras ciudades, libres del ruido y la contaminación de ayer, vibrando con vida y energía limpia. No solo vendemos productos; ofrecemos la promesa de un futuro más sostenible y saludable para las generaciones venideras.
+          </p>
+          
+          <p>
+            Nuestra misión es acelerar la transición hacia una movilidad urbana ecológica. Creemos que cada trayecto, sin importar cuán corto sea, es una oportunidad para tomar una decisión mejor para nuestro planeta. Al ofrecer soluciones innovadoras, fiables y accesibles, buscamos empoderar a individuos y comunidades para que sean parte de este cambio positivo.
+          </p>
+          
+          <p>
+            Somos un equipo de soñadores, ingenieros e innovadores, unidos por una pasión compartida por la tecnología, el diseño y la sostenibilidad. Cada producto que ofrecemos es el resultado de una investigación meticulosa y un compromiso inquebrantable con la calidad, diseñado para ofrecer un rendimiento excepcional y una experiencia inigualable.
+          </p>
+          
+          <p class="closing">
+            Únete a nosotros en este viaje. Juntos, podemos redefinir la forma en que nos movemos y construir ciudades que no solo sean más inteligentes, sino también mejores para vivir.
+          </p>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Sostenibilidad</h3>
+            <p>Comprometidos con la protección del medio ambiente y la reducción de emisiones de carbono en cada producto que ofrecemos.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🚀</div>
+            <h3>Innovación</h3>
+            <p>Constantemente buscamos las últimas tecnologías y diseños para ofrecer productos que marquen la diferencia.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Comunidad</h3>
+            <p>Creemos en el poder de la comunidad para crear un cambio positivo y duradero en nuestras ciudades.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">⭐</div>
+            <h3>Calidad</h3>
+            <p>Cada producto pasa por rigurosos controles de calidad para garantizar durabilidad, seguridad y rendimiento excepcional.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <h3>¿Listo para ser parte del cambio?</h3>
+        <p>Descubre cómo nuestros productos pueden transformar tu forma de moverte por la ciudad.</p>
+        <div class="cta-actions">
+          <a href="/nl/productos/" class="btn btn-primary btn-lg">Ver Productos</a>
+          <a href="/nl/contacto/" class="btn btn-secondary btn-lg">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .about-hero {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #10b981;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+  }
+  
+  .content-text {
+    margin-bottom: 60px;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .content-text p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 24px;
+  }
+  
+  .closing {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #10b981;
+    border-left: 4px solid #10b981;
+    padding-left: 24px;
+    margin-top: 40px;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .value-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .value-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+  }
+  
+  .value-card p {
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .cta-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  
+  .cta-section p {
+    font-size: 1.125rem;
+    margin-bottom: 32px;
+    opacity: 0.9;
+  }
+  
+  .cta-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn-lg {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      margin-bottom: 60px;
+    }
+    
+    .about-title {
+      font-size: 2.5rem;
+    }
+    
+    .about-subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .about-content {
+      margin-bottom: 60px;
+    }
+    
+    .values-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .value-card {
+      padding: 30px 20px;
+    }
+    
+    .cta-section {
+      padding: 40px 20px;
+    }
+    
+    .cta-section h3 {
+      font-size: 1.5rem;
+    }
+    
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .btn-lg {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>
+
