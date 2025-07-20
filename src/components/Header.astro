@@ -41,7 +41,7 @@ const currentPath = Astro.url.pathname;
       </div>
       
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <img src="/images/mugixor-icon.png" alt="Menu Mugixor" class="menu-icon" />
+        <img src="/images/mugixor-icon-correct.png" alt="Menu Mugixor" class="menu-icon" />
       </button>
     </nav>
   </div>
@@ -64,7 +64,7 @@ const currentPath = Astro.url.pathname;
   }
   
   .logo-image {
-    height: 40px;
+    height: 60px;
     width: auto;
     transition: all 0.3s ease;
   }
@@ -148,15 +148,17 @@ const currentPath = Astro.url.pathname;
     
     .nav-menu {
       position: fixed;
-      top: 100%;
+      top: 80px;
       left: 0;
       width: 100%;
       background: white;
       flex-direction: column;
       padding: 2rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       transform: translateY(-100vh);
       transition: transform 0.3s ease;
+      z-index: 999;
+      border-top: 1px solid #e5e7eb;
     }
     
     .nav-menu.active {
@@ -165,18 +167,31 @@ const currentPath = Astro.url.pathname;
     
     .nav-list {
       flex-direction: column;
-      gap: 1rem;
+      gap: 1.5rem;
       width: 100%;
       text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .nav-link {
+      font-size: 1.1rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f3f4f6;
     }
     
     .nav-actions {
       margin-top: 1rem;
+      display: flex;
+      justify-content: center;
     }
     
     .nav-toggle.active .menu-icon {
       transform: rotate(180deg);
       filter: brightness(0.8);
+    }
+    
+    .logo-image {
+      height: 50px;
     }
   }
 </style>
