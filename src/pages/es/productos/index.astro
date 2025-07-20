@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import ProductCard from '../../../components/ProductCard.astro';
+import ProductFilter from '../../../components/ProductFilter.astro';
 import { t } from '../../../i18n/index.js';
 
 // Import products
@@ -13,7 +14,7 @@ const lang = 'es';
 const products = [product1, product2, product3, product4];
 ---
 
-<Layout title="Productos - Cholloberri" description="Explora nuestra selección completa de productos innovadores para movilidad sostenible." lang={lang}>
+<Layout title="Productos - Mugixor" description="Explora nuestra selección completa de productos innovadores para movilidad sostenible." lang={lang}>
   <section class="section">
     <div class="container">
       <div class="text-center mb-12">
@@ -22,6 +23,9 @@ const products = [product1, product2, product3, product4];
           {t(lang, 'products.description')}
         </p>
       </div>
+      
+      <!-- Product Filter -->
+      <ProductFilter lang={lang} />
       
       <div class="grid grid-3">
         {products.map(product => (

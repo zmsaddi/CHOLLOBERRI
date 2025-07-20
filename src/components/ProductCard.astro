@@ -26,7 +26,7 @@ const whatsappMessage = generateWhatsAppMessage(productData.name, lang);
 const whatsappUrl = `https://wa.me/34632759513?text=${whatsappMessage}`;
 ---
 
-<div class="product-card">
+<div class="product-card" data-category={product.category || 'bike'}>
   <div class="product-image">
     <img src={product.images[0]} alt={productData.name} loading="lazy" />
     {product.featured && (
