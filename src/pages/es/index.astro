@@ -3,32 +3,69 @@ import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { t } from '../../i18n/index.js';
 
+const lang = 'es';
+
 // Import products
 import product1 from '../../content/products/product-1.json';
 import product2 from '../../content/products/product-2.json';
 import product3 from '../../content/products/product-3.json';
 import product4 from '../../content/products/product-4.json';
 
-const lang = 'es';
 const products = [product1, product2, product3, product4];
-const featuredProducts = products.filter(p => p.featured);
+const featuredProducts = products.filter(product => product.featured);
+
+// SEO data
+const seoTitle = t(lang, 'seo.home_title');
+const seoDescription = t(lang, 'seo.home_description');
 ---
 
-<Layout title="Cholloberri - Liderando el Futuro de la Movilidad Sostenible" description="Descubre productos innovadores para un futuro más sostenible. Bicicletas eléctricas, patinetes y más." lang={lang}>
+<Layout title={seoTitle} description={seoDescription} lang={lang}>
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero-section">
     <div class="container">
       <div class="hero-content">
-        <h1 class="hero-title">{t(lang, 'home.hero_title')}</h1>
-        <p class="hero-subtitle">{t(lang, 'home.hero_subtitle')}</p>
-        <p class="hero-description">{t(lang, 'home.hero_description')}</p>
-        <div class="hero-actions">
-          <a href="/es/productos/" class="btn btn-primary btn-lg">
-            {t(lang, 'buttons.browse_products')}
-          </a>
-          <a href="/es/sobre-nosotros/" class="btn btn-secondary btn-lg">
-            {t(lang, 'nav.about')}
-          </a>
+        <div class="hero-text">
+          <h1 class="hero-title">
+            {t(lang, 'home.hero_title')}
+          </h1>
+          <p class="hero-subtitle">
+            {t(lang, 'home.hero_subtitle')}
+          </p>
+          <p class="hero-description">
+            {t(lang, 'home.hero_description')}
+          </p>
+          <div class="hero-actions">
+            <a href="/es/productos/" class="btn btn-primary btn-lg">
+              {t(lang, 'buttons.browse_products')}
+            </a>
+            <a href="/es/sobre-nosotros/" class="btn btn-secondary btn-lg">
+              Conoce Mugixor
+            </a>
+          </div>
+          
+          <!-- Trust indicators -->
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <span class="trust-icon">🌱</span>
+              <span>100% Sostenible</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🚀</span>
+              <span>Entrega Rápida</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">💰</span>
+              <span>Precios Estudiantes</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🔧</span>
+              <span>Garantía Total</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <img src="/images/hero-mugixor.jpg" alt="Mugixor - Movilidad sostenible para estudiantes y trabajadores en España" loading="eager" />
         </div>
       </div>
     </div>
@@ -38,48 +75,182 @@ const featuredProducts = products.filter(p => p.featured);
   <section class="section">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">{t(lang, 'home.featured_products')}</h2>
-        <p class="text-lg text-gray-600">Descubre nuestros productos más populares</p>
+        <h2 class="text-4xl font-bold mb-4">
+          {t(lang, 'home.featured_products')}
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Descubre nuestras bicicletas eléctricas y patinetes más populares entre estudiantes de Madrid, Barcelona, Valencia, Sevilla, Bilbao y toda España.
+        </p>
       </div>
       
       <div class="grid grid-3">
-        {featuredProducts.map(product => (
+        {featuredProducts.map((product) => (
           <ProductCard product={product} lang={lang} />
         ))}
       </div>
       
       <div class="text-center mt-8">
-        <a href="/es/productos/" class="btn btn-primary">
-          {t(lang, 'buttons.browse_products')}
+        <a href="/es/productos/" class="btn btn-primary btn-lg">
+          Ver Todos los Productos
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="section-sm" style="background-color: #f9fafb;">
+  <!-- Why Choose Mugixor Section -->
+  <section class="section bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">{t(lang, 'home.why_choose_us')}</h2>
+        <h2 class="text-4xl font-bold mb-4">
+          {t(lang, 'home.why_choose_us')}
+        </h2>
+        <p class="text-xl text-gray-600">
+          La startup vasca que está revolucionando la movilidad urbana en España y Europa
+        </p>
       </div>
       
-      <div class="grid grid-3">
+      <div class="grid grid-2">
         <div class="feature-card">
           <div class="feature-icon">🌱</div>
           <h3 class="feature-title">{t(lang, 'home.sustainability')}</h3>
-          <p class="feature-description">{t(lang, 'home.sustainability_desc')}</p>
+          <p class="feature-description">
+            {t(lang, 'home.sustainability_desc')}
+          </p>
+          <ul class="feature-list">
+            <li>Cero emisiones en tus desplazamientos diarios</li>
+            <li>Contribuye a ciudades más limpias en España</li>
+            <li>Reduce tu huella de carbono personal</li>
+          </ul>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">⭐</div>
+          <div class="feature-icon">⚡</div>
           <h3 class="feature-title">{t(lang, 'home.quality')}</h3>
-          <p class="feature-description">{t(lang, 'home.quality_desc')}</p>
+          <p class="feature-description">
+            {t(lang, 'home.quality_desc')}
+          </p>
+          <ul class="feature-list">
+            <li>Productos testados por estudiantes españoles</li>
+            <li>Garantía completa y servicio técnico</li>
+            <li>Resistentes al uso intensivo diario</li>
+          </ul>
         </div>
         
         <div class="feature-card">
-          <div class="feature-icon">🚀</div>
+          <div class="feature-icon">🎯</div>
           <h3 class="feature-title">{t(lang, 'home.innovation')}</h3>
-          <p class="feature-description">{t(lang, 'home.innovation_desc')}</p>
+          <p class="feature-description">
+            {t(lang, 'home.innovation_desc')}
+          </p>
+          <ul class="feature-list">
+            <li>Diseño pensado para estudiantes y trabajadores</li>
+            <li>Fácil mantenimiento y reparación</li>
+            <li>Tecnología accesible y práctica</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🏠</div>
+          <h3 class="feature-title">{t(lang, 'home.local_focus')}</h3>
+          <p class="feature-description">
+            {t(lang, 'home.local_focus_desc')}
+          </p>
+          <ul class="feature-list">
+            <li>Servicio personalizado en español y euskera</li>
+            <li>Conocemos las calles de tu ciudad</li>
+            <li>Soporte local en toda España</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities Coverage Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">
+          Servimos a Estudiantes y Trabajadores en Toda España
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Desde el País Vasco hasta Andalucía, llevamos movilidad sostenible a tu ciudad
+        </p>
+      </div>
+      
+      <div class="cities-grid">
+        <div class="city-group">
+          <h3 class="city-group-title">Principales Ciudades</h3>
+          <div class="city-list">
+            <span class="city-tag">Madrid</span>
+            <span class="city-tag">Barcelona</span>
+            <span class="city-tag">Valencia</span>
+            <span class="city-tag">Sevilla</span>
+            <span class="city-tag">Zaragoza</span>
+            <span class="city-tag">Málaga</span>
+            <span class="city-tag">Bilbao</span>
+            <span class="city-tag">Alicante</span>
+            <span class="city-tag">Córdoba</span>
+            <span class="city-tag">Valladolid</span>
+            <span class="city-tag">Vigo</span>
+            <span class="city-tag">Gijón</span>
+          </div>
+        </div>
+        
+        <div class="city-group">
+          <h3 class="city-group-title">País Vasco (Nuestro Hogar)</h3>
+          <div class="city-list">
+            <span class="city-tag featured">Bilbao</span>
+            <span class="city-tag featured">Vitoria-Gasteiz</span>
+            <span class="city-tag featured">San Sebastián</span>
+            <span class="city-tag">Getxo</span>
+            <span class="city-tag">Barakaldo</span>
+            <span class="city-tag">Santurtzi</span>
+          </div>
+        </div>
+        
+        <div class="city-group">
+          <h3 class="city-group-title">Ciudades Universitarias</h3>
+          <div class="city-list">
+            <span class="city-tag">Salamanca</span>
+            <span class="city-tag">Granada</span>
+            <span class="city-tag">Santiago</span>
+            <span class="city-tag">Pamplona</span>
+            <span class="city-tag">León</span>
+            <span class="city-tag">Burgos</span>
+            <span class="city-tag">Cáceres</span>
+            <span class="city-tag">Alcalá</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <p class="text-lg text-gray-600 mb-4">
+          ¿No ves tu ciudad? ¡Contáctanos! Estamos expandiéndonos rápidamente por toda España.
+        </p>
+        <a href="/es/contacto/" class="btn btn-primary">
+          Consultar Disponibilidad
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          ¿Listo para Cambiar tu Forma de Moverte por España?
+        </h2>
+        <p class="cta-description">
+          Únete a miles de estudiantes y trabajadores que ya han elegido Mugixor para sus desplazamientos diarios en Madrid, Barcelona, Valencia, Bilbao y más de 100 ciudades españolas.
+        </p>
+        <div class="cta-actions">
+          <a href="/es/productos/" class="btn btn-primary btn-lg">
+            Explorar Productos
+          </a>
+          <a href="https://wa.me/34632759513?text=Hola Mugixor, quiero información sobre bicicletas eléctricas para estudiantes en España" class="btn btn-secondary btn-lg">
+            WhatsApp Directo
+          </a>
         </div>
       </div>
     </div>
@@ -87,54 +258,86 @@ const featuredProducts = products.filter(p => p.featured);
 </Layout>
 
 <style>
-  .hero {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    color: white;
-    padding: 120px 0;
-    text-align: center;
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    padding: 100px 0 80px;
+    overflow: hidden;
   }
   
   .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
   }
   
   .hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1f2937;
     margin-bottom: 1rem;
-    line-height: 1.2;
   }
   
   .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    color: #10b981;
     margin-bottom: 1.5rem;
-    opacity: 0.9;
   }
   
   .hero-description {
-    font-size: 1.125rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.8;
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
     line-height: 1.6;
   }
   
   .hero-actions {
     display: flex;
     gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-bottom: 3rem;
   }
   
-  .btn-lg {
-    padding: 16px 32px;
-    font-size: 1.125rem;
+  .trust-indicators {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .trust-icon {
+    font-size: 1.2rem;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Feature Cards */
   .feature-card {
-    text-align: center;
+    background: white;
     padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
   
   .feature-icon {
@@ -143,20 +346,139 @@ const featuredProducts = products.filter(p => p.featured);
   }
   
   .feature-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #1f2937;
+    margin-bottom: 1rem;
   }
   
   .feature-description {
     color: #6b7280;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
   }
   
+  .feature-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .feature-list li {
+    padding: 0.5rem 0;
+    color: #374151;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  /* Cities Section */
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .city-group {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .city-group-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .city-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .city-tag {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .city-tag:hover {
+    background: #e5e7eb;
+    transform: translateY(-1px);
+  }
+  
+  .city-tag.featured {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    padding: 80px 0;
+    color: white;
+  }
+  
+  .cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-description {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  .cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Background utilities */
+  .bg-gray-50 {
+    background-color: #f9fafb;
+  }
+  
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
-    .hero {
-      padding: 80px 0;
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
     }
     
     .hero-title {
@@ -167,14 +489,32 @@ const featuredProducts = products.filter(p => p.featured);
       font-size: 1.25rem;
     }
     
+    .hero-description {
+      font-size: 1.125rem;
+    }
+    
     .hero-actions {
       flex-direction: column;
       align-items: center;
     }
     
-    .btn-lg {
-      width: 100%;
-      max-width: 300px;
+    .trust-indicators {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      justify-items: center;
+    }
+    
+    .cities-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-title {
+      font-size: 2rem;
+    }
+    
+    .cta-actions {
+      flex-direction: column;
+      align-items: center;
     }
   }
 </style>

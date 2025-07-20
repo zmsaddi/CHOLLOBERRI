@@ -1,7 +1,12 @@
 {
   "id": "smart-scooter-pro",
   "slug": "smart-scooter-pro",
-  "image": "/images/smart-scooter-pro.jpg",
+  "images": [
+    "/images/smart-scooter-pro-1.jpg",
+    "/images/smart-scooter-pro-2.jpg",
+    "/images/smart-scooter-pro-3.jpg",
+    "/images/smart-scooter-pro-4.jpg"
+  ],
   "price": "649",
   "currency": "€",
   "featured": true,
@@ -14,7 +19,9 @@
       "Conectividad Bluetooth",
       "Aplicación móvil integrada",
       "Diseño plegable ultracompacto",
-      "Suspensión dual"
+      "Suspensión dual",
+      "Pantalla OLED",
+      "Sistema antirrobo"
     ]
   },
   "eu": {
@@ -26,7 +33,9 @@
       "Bluetooth konektagarritasuna",
       "Mugikorrerako aplikazio integratua",
       "Diseinu tolestgarri ultratrinkoa",
-      "Eseki bikala"
+      "Eseki bikala",
+      "OLED pantaila",
+      "Lapurketa aurkako sistema"
     ]
   },
   "fr": {
@@ -38,7 +47,9 @@
       "Connectivité Bluetooth",
       "Application mobile intégrée",
       "Design pliable ultra-compact",
-      "Suspension double"
+      "Suspension double",
+      "Écran OLED",
+      "Système antivol"
     ]
   },
   "en": {
@@ -50,7 +61,9 @@
       "Bluetooth connectivity",
       "Integrated mobile app",
       "Ultra-compact foldable design",
-      "Dual suspension"
+      "Dual suspension",
+      "OLED display",
+      "Anti-theft system"
     ]
   },
   "nl": {
@@ -62,7 +75,9 @@
       "Bluetooth-connectiviteit",
       "Geïntegreerde mobiele app",
       "Ultra-compact opvouwbaar ontwerp",
-      "Dubbele vering"
+      "Dubbele vering",
+      "OLED-display",
+      "Antidiefstalsysteem"
     ]
   },
   "de": {
@@ -74,7 +89,9 @@
       "Bluetooth-Konnektivität",
       "Integrierte mobile App",
       "Ultra-kompaktes faltbares Design",
-      "Duale Federung"
+      "Duale Federung",
+      "OLED-Display",
+      "Diebstahlschutzsystem"
     ]
   }
 }

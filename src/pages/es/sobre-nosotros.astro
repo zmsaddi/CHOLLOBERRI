@@ -3,68 +3,273 @@ import Layout from '../../layouts/Layout.astro';
 import { t } from '../../i18n/index.js';
 
 const lang = 'es';
+
+// SEO data
+const seoTitle = t(lang, 'seo.about_title');
+const seoDescription = t(lang, 'seo.about_description');
 ---
 
-<Layout title="Sobre Nosotros - Cholloberri" description="Conoce nuestra misión de liderar el futuro hacia ciudades más limpias y vidas mejores a través de la movilidad sostenible." lang={lang}>
+<Layout title={seoTitle} description={seoDescription} lang={lang}>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          {t(lang, 'about.title')}
+        </h1>
+        <p class="hero-subtitle">
+          {t(lang, 'about.subtitle')}
+        </p>
+        <p class="hero-description">
+          La startup vasca que está transformando la movilidad urbana para estudiantes, jóvenes profesionales y trabajadores en España y toda Europa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
   <section class="section">
     <div class="container">
-      <div class="about-hero">
-        <h1 class="about-title">{t(lang, 'about.title')}</h1>
-        <h2 class="about-subtitle">{t(lang, 'about.subtitle')}</h2>
+      <div class="story-grid">
+        <div class="story-content">
+          <h2 class="section-title">Nuestra Historia</h2>
+          <div class="story-text">
+            <p class="story-paragraph">
+              <strong>Mugixor</strong> es una startup europea de movilidad sostenible, nacida en el corazón de <strong>Euskadi</strong> — donde la innovación práctica se une con la responsabilidad ambiental y una visión de crecimiento inteligente.
+            </p>
+            
+            <p class="story-paragraph">
+              Desarrollamos <strong>soluciones accesibles y confiables</strong> para la movilidad urbana, enfocándonos en productos que realmente funcionen para <strong>estudiantes, jóvenes profesionales y trabajadores</strong> que buscan moverse con eficiencia, conciencia ecológica y simplicidad.
+            </p>
+            
+            <p class="story-paragraph">
+              Nuestro enfoque es directo: <strong>comenzamos con las personas</strong> que realmente usan el transporte urbano a diario en ciudades como Madrid, Barcelona, Valencia, Bilbao, Sevilla y más de 100 ciudades españolas, expandimos hacia <strong>empresas</strong> que buscan soluciones para sus equipos, y evolucionamos hacia <strong>alianzas con ayuntamientos</strong> para transformar ciudades completas.
+            </p>
+            
+            <p class="story-paragraph highlight">
+              <strong>Paso a paso, persona a persona, construimos el futuro de la movilidad urbana.</strong>
+            </p>
+            
+            <p class="story-paragraph">
+              Empezamos local, crecemos con propósito, soñamos en grande.
+            </p>
+            
+            <div class="brand-statement">
+              <h3>Mugixor — Smart motion. Local roots. Global vision.</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="story-image">
+          <img src="/images/mugixor-team-euskadi.jpg" alt="Equipo Mugixor en el País Vasco - Startup de movilidad sostenible" loading="lazy" />
+          <div class="image-caption">
+            Nuestro equipo en Euskadi, trabajando para revolucionar la movilidad urbana en España y Europa
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission Section -->
+  <section class="section bg-gray-50">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Nuestra Misión</h2>
+        <p class="section-subtitle">
+          Hacer la movilidad sostenible accesible para todos los estudiantes y trabajadores de Europa
+        </p>
       </div>
       
-      <div class="about-content">
-        <div class="content-text">
-          <p class="lead">
-            Nos hemos embarcado en un viaje audaz, impulsado por una visión simple pero poderosa: imaginar nuestras ciudades, libres del ruido y la contaminación de ayer, vibrando con vida y energía limpia. No solo vendemos productos; ofrecemos la promesa de un futuro más sostenible y saludable para las generaciones venideras.
+      <div class="mission-grid">
+        <div class="mission-card">
+          <div class="mission-icon">🎯</div>
+          <h3 class="mission-title">Para Estudiantes</h3>
+          <p class="mission-description">
+            Ofrecemos soluciones de movilidad <strong>económicas y confiables</strong> para estudiantes universitarios en Madrid, Barcelona, Valencia, Bilbao, Sevilla y más de 100 ciudades españolas. Entendemos que cada euro cuenta cuando estudias.
           </p>
-          
-          <p>
-            Nuestra misión es acelerar la transición hacia una movilidad urbana ecológica. Creemos que cada trayecto, sin importar cuán corto sea, es una oportunidad para tomar una decisión mejor para nuestro planeta. Al ofrecer soluciones innovadoras, fiables y accesibles, buscamos empoderar a individuos y comunidades para que sean parte de este cambio positivo.
+          <ul class="mission-features">
+            <li>Precios especiales para estudiantes</li>
+            <li>Financiación flexible</li>
+            <li>Mantenimiento incluido</li>
+            <li>Soporte técnico en español</li>
+          </ul>
+        </div>
+        
+        <div class="mission-card">
+          <div class="mission-icon">💼</div>
+          <h3 class="mission-title">Para Jóvenes Profesionales</h3>
+          <p class="mission-description">
+            Diseñamos productos pensando en <strong>profesionales que valoran la eficiencia</strong> y quieren llegar puntuales al trabajo sin depender del transporte público o el tráfico de las grandes ciudades españolas.
           </p>
-          
-          <p>
-            Somos un equipo de soñadores, ingenieros e innovadores, unidos por una pasión compartida por la tecnología, el diseño y la sostenibilidad. Cada producto que ofrecemos es el resultado de una investigación meticulosa y un compromiso inquebrantable con la calidad, diseñado para ofrecer un rendimiento excepcional y una experiencia inigualable.
+          <ul class="mission-features">
+            <li>Velocidad y autonomía optimizadas</li>
+            <li>Diseño profesional y elegante</li>
+            <li>Fácil mantenimiento</li>
+            <li>Garantía completa</li>
+          </ul>
+        </div>
+        
+        <div class="mission-card">
+          <div class="mission-icon">🏗️</div>
+          <h3 class="mission-title">Para Trabajadores</h3>
+          <p class="mission-description">
+            Creamos soluciones <strong>robustas y duraderas</strong> para trabajadores que necesitan un transporte confiable todos los días, desde técnicos hasta repartidores, en todas las ciudades donde operamos.
           </p>
-          
-          <p class="closing">
-            Únete a nosotros en este viaje. Juntos, podemos redefinir la forma en que nos movemos y construir ciudades que no solo sean más inteligentes, sino también mejores para vivir.
+          <ul class="mission-features">
+            <li>Resistencia al uso intensivo</li>
+            <li>Capacidad de carga adicional</li>
+            <li>Servicio técnico especializado</li>
+            <li>Repuestos siempre disponibles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Nuestros Valores Vascos</h2>
+        <p class="section-subtitle">
+          Los principios que nos guían desde Euskadi hacia toda Europa
+        </p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon">🌱</div>
+          <h3 class="value-title">Sostenibilidad Real</h3>
+          <p class="value-description">
+            No solo hablamos de sostenibilidad, la vivimos. Cada producto Mugixor contribuye activamente a reducir las emisiones urbanas en las ciudades españolas donde operamos.
           </p>
         </div>
         
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">🌍</div>
-            <h3>Sostenibilidad</h3>
-            <p>Comprometidos con la protección del medio ambiente y la reducción de emisiones de carbono en cada producto que ofrecemos.</p>
+        <div class="value-item">
+          <div class="value-icon">🤝</div>
+          <h3 class="value-title">Cercanía Vasca</h3>
+          <p class="value-description">
+            Mantenemos el trato cercano y personal característico del País Vasco. Conocemos a nuestros clientes por su nombre y entendemos sus necesidades específicas.
+          </p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-icon">⚡</div>
+          <h3 class="value-title">Innovación Práctica</h3>
+          <p class="value-description">
+            Innovamos con los pies en la tierra. Cada mejora en nuestros productos responde a necesidades reales de estudiantes y trabajadores españoles.
+          </p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-icon">🎯</div>
+          <h3 class="value-title">Calidad Sin Compromisos</h3>
+          <p class="value-description">
+            La tradición industrial vasca nos enseñó que la calidad no se negocia. Cada producto Mugixor está diseñado para durar y rendir al máximo.
+          </p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-icon">🌍</div>
+          <h3 class="value-title">Visión Europea</h3>
+          <p class="value-description">
+            Aunque nuestras raíces están en Euskadi, nuestra ambición es europea. Llevamos la movilidad sostenible a estudiantes y trabajadores de todo el continente.
+          </p>
+        </div>
+        
+        <div class="value-item">
+          <div class="value-icon">💪</div>
+          <h3 class="value-title">Compromiso Social</h3>
+          <p class="value-description">
+            Creemos que la movilidad sostenible debe ser accesible para todos. Por eso ofrecemos precios especiales para estudiantes y programas de financiación flexibles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Coverage Section -->
+  <section class="section bg-green-50">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h2 class="section-title">Dónde Estamos</h2>
+        <p class="section-subtitle">
+          Desde Euskadi, servimos a estudiantes y trabajadores en más de 100 ciudades europeas
+        </p>
+      </div>
+      
+      <div class="coverage-grid">
+        <div class="coverage-region">
+          <h3 class="coverage-title">🏠 País Vasco (Nuestro Hogar)</h3>
+          <p class="coverage-description">
+            Donde todo comenzó. Servicio completo y personalizado en euskera y español.
+          </p>
+          <div class="coverage-cities">
+            <span class="city-badge primary">Bilbao</span>
+            <span class="city-badge primary">Vitoria-Gasteiz</span>
+            <span class="city-badge primary">San Sebastián</span>
+            <span class="city-badge">Getxo</span>
+            <span class="city-badge">Barakaldo</span>
+            <span class="city-badge">Santurtzi</span>
           </div>
-          
-          <div class="value-card">
-            <div class="value-icon">🚀</div>
-            <h3>Innovación</h3>
-            <p>Constantemente buscamos las últimas tecnologías y diseños para ofrecer productos que marquen la diferencia.</p>
+        </div>
+        
+        <div class="coverage-region">
+          <h3 class="coverage-title">🇪🇸 España Continental</h3>
+          <p class="coverage-description">
+            Cobertura completa en las principales ciudades españolas con servicio en español.
+          </p>
+          <div class="coverage-cities">
+            <span class="city-badge">Madrid</span>
+            <span class="city-badge">Barcelona</span>
+            <span class="city-badge">Valencia</span>
+            <span class="city-badge">Sevilla</span>
+            <span class="city-badge">Zaragoza</span>
+            <span class="city-badge">Málaga</span>
+            <span class="city-badge">Alicante</span>
+            <span class="city-badge">Córdoba</span>
+            <span class="city-badge">Valladolid</span>
+            <span class="city-badge">Vigo</span>
+            <span class="city-badge">+90 ciudades más</span>
           </div>
-          
-          <div class="value-card">
-            <div class="value-icon">🤝</div>
-            <h3>Comunidad</h3>
-            <p>Creemos en el poder de la comunidad para crear un cambio positivo y duradero en nuestras ciudades.</p>
-          </div>
-          
-          <div class="value-card">
-            <div class="value-icon">⭐</div>
-            <h3>Calidad</h3>
-            <p>Cada producto pasa por rigurosos controles de calidad para garantizar durabilidad, seguridad y rendimiento excepcional.</p>
+        </div>
+        
+        <div class="coverage-region">
+          <h3 class="coverage-title">🇪🇺 Expansión Europea</h3>
+          <p class="coverage-description">
+            Llevamos la experiencia Mugixor a estudiantes y trabajadores de toda Europa.
+          </p>
+          <div class="coverage-cities">
+            <span class="city-badge">París</span>
+            <span class="city-badge">Londres</span>
+            <span class="city-badge">Berlín</span>
+            <span class="city-badge">Ámsterdam</span>
+            <span class="city-badge">Bruselas</span>
+            <span class="city-badge">Zurich</span>
+            <span class="city-badge">+800 ciudades más</span>
           </div>
         </div>
       </div>
-      
-      <div class="cta-section">
-        <h3>¿Listo para ser parte del cambio?</h3>
-        <p>Descubre cómo nuestros productos pueden transformar tu forma de moverte por la ciudad.</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">
+          ¿Quieres Formar Parte de la Revolución de la Movilidad?
+        </h2>
+        <p class="cta-description">
+          Únete a miles de estudiantes y trabajadores que ya han elegido Mugixor para transformar su forma de moverse por las ciudades españolas y europeas.
+        </p>
         <div class="cta-actions">
-          <a href="/es/productos/" class="btn btn-primary btn-lg">Ver Productos</a>
-          <a href="/es/contacto/" class="btn btn-secondary btn-lg">Contáctanos</a>
+          <a href="/es/productos/" class="btn btn-primary btn-lg">
+            Ver Nuestros Productos
+          </a>
+          <a href="/es/contacto/" class="btn btn-secondary btn-lg">
+            Contactar con Nosotros
+          </a>
         </div>
       </div>
     </div>
@@ -72,171 +277,313 @@ const lang = 'es';
 </Layout>
 
 <style>
-  .about-hero {
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    padding: 120px 0 80px;
     text-align: center;
-    margin-bottom: 80px;
   }
   
-  .about-title {
-    font-size: 3rem;
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #10b981;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Story Section */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
     font-weight: 700;
     color: #1f2937;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
   
-  .about-subtitle {
+  .story-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-paragraph.highlight {
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+    font-weight: 600;
+  }
+  
+  .brand-statement {
+    background: #1f2937;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .brand-statement h3 {
     font-size: 1.5rem;
-    font-weight: 500;
-    color: #10b981;
-    line-height: 1.4;
-    max-width: 800px;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-caption {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  
+  /* Mission Section */
+  .section-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 600px;
     margin: 0 auto;
   }
   
-  .about-content {
-    max-width: 1000px;
-    margin: 0 auto 80px;
+  .mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
   }
   
-  .content-text {
-    margin-bottom: 60px;
+  .mission-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
   }
   
-  .lead {
-    font-size: 1.25rem;
-    font-weight: 500;
+  .mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mission-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-description {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mission-features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mission-features li {
+    padding: 0.5rem 0;
     color: #374151;
-    line-height: 1.7;
-    margin-bottom: 30px;
+    position: relative;
+    padding-left: 1.5rem;
   }
   
-  .content-text p {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: #4b5563;
-    margin-bottom: 24px;
-  }
-  
-  .closing {
-    font-size: 1.25rem;
-    font-weight: 500;
+  .mission-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
     color: #10b981;
-    border-left: 4px solid #10b981;
-    padding-left: 24px;
-    margin-top: 40px;
+    font-weight: bold;
   }
   
+  /* Values Section */
   .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
   }
   
-  .value-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  .value-item {
     text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .value-card:hover {
-    transform: translateY(-8px);
+    padding: 2rem;
   }
   
   .value-icon {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   
-  .value-card h3 {
+  .value-title {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #1f2937;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   
-  .value-card p {
+  .value-description {
     color: #6b7280;
     line-height: 1.6;
   }
   
-  .cta-section {
+  /* Coverage Section */
+  .coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .coverage-region {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .coverage-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .coverage-description {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .coverage-cities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .city-badge {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .city-badge.primary {
     background: linear-gradient(135deg, #10b981, #059669);
     color: white;
-    padding: 60px 40px;
-    border-radius: 20px;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    padding: 80px 0;
+    color: white;
     text-align: center;
   }
   
-  .cta-section h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 16px;
+  .cta-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
   }
   
-  .cta-section p {
-    font-size: 1.125rem;
-    margin-bottom: 32px;
-    opacity: 0.9;
+  .cta-description {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
   }
   
   .cta-actions {
     display: flex;
-    gap: 16px;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 1rem;
   }
   
-  .btn-lg {
-    padding: 16px 32px;
-    font-size: 1.125rem;
-    font-weight: 600;
+  /* Background utilities */
+  .bg-gray-50 {
+    background-color: #f9fafb;
   }
   
+  .bg-green-50 {
+    background-color: #f0fdf4;
+  }
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
-    .about-hero {
-      margin-bottom: 60px;
-    }
-    
-    .about-title {
+    .hero-title {
       font-size: 2.5rem;
     }
     
-    .about-subtitle {
+    .hero-subtitle {
       font-size: 1.25rem;
     }
     
-    .about-content {
-      margin-bottom: 60px;
+    .story-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .mission-grid {
+      grid-template-columns: 1fr;
     }
     
     .values-grid {
       grid-template-columns: 1fr;
-      gap: 20px;
     }
     
-    .value-card {
-      padding: 30px 20px;
+    .coverage-grid {
+      grid-template-columns: 1fr;
     }
     
-    .cta-section {
-      padding: 40px 20px;
-    }
-    
-    .cta-section h3 {
-      font-size: 1.5rem;
+    .cta-title {
+      font-size: 2rem;
     }
     
     .cta-actions {
       flex-direction: column;
       align-items: center;
-    }
-    
-    .btn-lg {
-      width: 100%;
-      max-width: 300px;
     }
   }
 </style>

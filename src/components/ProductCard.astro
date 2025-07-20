@@ -23,12 +23,12 @@ function generateWhatsAppMessage(productName: string, lang: string) {
 }
 
 const whatsappMessage = generateWhatsAppMessage(productData.name, lang);
-const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
+const whatsappUrl = `https://wa.me/34632759513?text=${whatsappMessage}`;
 ---
 
 <div class="product-card">
   <div class="product-image">
-    <img src={product.image} alt={productData.name} loading="lazy" />
+    <img src={product.images[0]} alt={productData.name} loading="lazy" />
     {product.featured && (
       <span class="featured-badge">
         {lang === 'es' && 'Destacado'}

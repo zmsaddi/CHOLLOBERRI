@@ -1,7 +1,12 @@
 {
   "id": "eco-bike-urban",
   "slug": "eco-bike-urban",
-  "image": "/images/eco-bike-urban.jpg",
+  "images": [
+    "/images/eco-bike-urban-1.jpg",
+    "/images/eco-bike-urban-2.jpg",
+    "/images/eco-bike-urban-3.jpg",
+    "/images/eco-bike-urban-4.jpg"
+  ],
   "price": "899",
   "currency": "€",
   "featured": true,
@@ -13,7 +18,9 @@
       "Motor eléctrico silencioso",
       "Diseño urbano elegante",
       "Batería extraíble",
-      "Sistema de frenado regenerativo"
+      "Sistema de frenado regenerativo",
+      "Luces LED integradas",
+      "Pantalla digital inteligente"
     ]
   },
   "eu": {
@@ -24,7 +31,9 @@
       "Motor elektriko isila",
       "Hiri diseinu dotorea",
       "Bateria kengarria",
-      "Balazta erregeneratiboaren sistema"
+      "Balazta erregeneratiboaren sistema",
+      "LED argi integratuak",
+      "Pantaila digital adimentsua"
     ]
   },
   "fr": {
@@ -35,7 +44,9 @@
       "Moteur électrique silencieux",
       "Design urbain élégant",
       "Batterie amovible",
-      "Système de freinage régénératif"
+      "Système de freinage régénératif",
+      "Éclairage LED intégré",
+      "Écran numérique intelligent"
     ]
   },
   "en": {
@@ -46,7 +57,9 @@
       "Silent electric motor",
       "Elegant urban design",
       "Removable battery",
-      "Regenerative braking system"
+      "Regenerative braking system",
+      "Integrated LED lighting",
+      "Smart digital display"
     ]
   },
   "nl": {
@@ -57,7 +70,9 @@
       "Stille elektrische motor",
       "Elegant stedelijk ontwerp",
       "Uitneembare batterij",
-      "Regeneratief remsysteem"
+      "Regeneratief remsysteem",
+      "Geïntegreerde LED-verlichting",
+      "Slim digitaal display"
     ]
   },
   "de": {
@@ -68,7 +83,9 @@
       "Leiser Elektromotor",
       "Elegantes städtisches Design",
       "Herausnehmbare Batterie",
-      "Regeneratives Bremssystem"
+      "Regeneratives Bremssystem",
+      "Integrierte LED-Beleuchtung",
+      "Intelligentes digitales Display"
     ]
   }
 }

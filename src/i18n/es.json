@@ -5,46 +5,58 @@
     "about": "Sobre Nosotros",
     "contact": "Contacto"
   },
-  "buttons": {
-    "order_whatsapp": "Pedir por WhatsApp",
-    "view_details": "Ver Detalles",
-    "browse_products": "Ver Todos los Productos",
-    "start_chat": "Iniciar Chat en WhatsApp",
-    "send_email": "Enviar Email"
-  },
   "home": {
-    "hero_title": "Liderando el Futuro",
-    "hero_subtitle": "Nuestra Visión para Ciudades Más Limpias y Vidas Mejores",
-    "hero_description": "Descubre productos innovadores que transforman la manera en que nos movemos hacia un futuro más sostenible.",
+    "hero_title": "Movilidad Sostenible para Jóvenes, Estudiantes y Trabajadores",
+    "hero_subtitle": "Mugixor - Nacida en Euskadi, Diseñada para el Futuro",
+    "hero_description": "Soluciones de transporte eléctrico accesibles y confiables para tu día a día. Bicicletas eléctricas, patinetes y más, pensados especialmente para estudiantes, jóvenes profesionales y trabajadores del País Vasco y toda Europa.",
     "featured_products": "Productos Destacados",
-    "why_choose_us": "¿Por Qué Elegirnos?",
+    "why_choose_us": "¿Por qué elegir Mugixor?",
     "sustainability": "Sostenibilidad",
-    "sustainability_desc": "Comprometidos con un futuro más verde",
-    "quality": "Calidad",
-    "quality_desc": "Productos de la más alta calidad",
-    "innovation": "Innovación",
-    "innovation_desc": "Tecnología de vanguardia"
+    "sustainability_desc": "Reducimos las emisiones urbanas con cada viaje, contribuyendo a ciudades más limpias en Euskadi y Europa.",
+    "quality": "Calidad Garantizada",
+    "quality_desc": "Productos confiables y duraderos, diseñados para el uso diario de estudiantes y trabajadores.",
+    "innovation": "Innovación Práctica",
+    "innovation_desc": "Tecnología accesible que realmente funciona, sin complicaciones innecesarias.",
+    "local_focus": "Raíces Vascas",
+    "local_focus_desc": "Nacidos en Euskadi, entendemos las necesidades de movilidad de Bilbao, Vitoria y San Sebastián."
   },
   "products": {
-    "title": "Nuestros Productos",
-    "description": "Explora nuestra selección de productos innovadores diseñados para un futuro más sostenible."
+    "title": "Transporte Eléctrico para Estudiantes y Trabajadores",
+    "description": "Descubre nuestra gama completa de vehículos eléctricos: bicicletas eléctricas, patinetes eléctricos y soluciones de movilidad sostenible, diseñadas especialmente para jóvenes, estudiantes y trabajadores del País Vasco."
   },
   "about": {
-    "title": "Sobre Nosotros",
-    "subtitle": "Liderando el Futuro: Nuestra Visión para Ciudades Más Limpias y Vidas Mejores"
+    "title": "Sobre Mugixor",
+    "subtitle": "Movilidad Sostenible Nacida en Euskadi"
   },
   "contact": {
-    "title": "Contacta con Nosotros",
-    "subtitle": "Estamos Aquí para Ayudar",
-    "description": "Si tienes una pregunta sobre nuestros productos, una idea innovadora para el futuro de la movilidad sostenible, o simplemente quieres saludar, nos encantaría escucharte.",
-    "whatsapp_title": "WhatsApp",
-    "whatsapp_desc": "Para la respuesta más rápida, especialmente para consultas sobre pedidos o productos.",
-    "email_title": "Email",
-    "email_desc": "Para preguntas generales, colaboraciones o consultas que requieran más detalle. Nuestro objetivo es responder a todos los correos en 24 horas laborables."
+    "title": "Contacta con Mugixor",
+    "subtitle": "¿Listo para cambiar tu forma de moverte?",
+    "description": "Estamos aquí para ayudarte a encontrar la solución de movilidad perfecta. Contacta con nuestro equipo vasco para más información sobre nuestros productos.",
+    "whatsapp_title": "WhatsApp Directo",
+    "whatsapp_desc": "Respuesta rápida para estudiantes y trabajadores. Consulta precios, disponibilidad y opciones de financiación.",
+    "email_title": "Email Profesional",
+    "email_desc": "Para consultas detalladas, empresas y colaboraciones institucionales."
+  },
+  "buttons": {
+    "browse_products": "Ver Productos",
+    "view_details": "Ver Detalles",
+    "order_whatsapp": "Pedir por WhatsApp",
+    "start_chat": "Iniciar Chat",
+    "send_email": "Enviar Email"
   },
   "footer": {
-    "copyright": "© 2025 Cholloberri. Todos los derechos reservados.",
-    "quick_links": "Enlaces Rápidos"
+    "quick_links": "Enlaces Rápidos",
+    "copyright": "© 2025 Mugixor. Movilidad sostenible desde Euskadi para Europa."
+  },
+  "seo": {
+    "home_title": "Mugixor - Bicicletas y Patinetes Eléctricos para Estudiantes | País Vasco",
+    "home_description": "Movilidad sostenible en Euskadi. Bicicletas eléctricas y patinetes para estudiantes, jóvenes y trabajadores en Bilbao, Vitoria y San Sebastián. Transporte eléctrico accesible y confiable.",
+    "products_title": "Bicicletas Eléctricas y Patinetes - Transporte Sostenible | Mugixor",
+    "products_description": "Compra bicicletas eléctricas y patinetes eléctricos en el País Vasco. Precios especiales para estudiantes. Entrega en Bilbao, Vitoria y San Sebastián. Financiación disponible.",
+    "about_title": "Sobre Mugixor - Startup de Movilidad Sostenible del País Vasco",
+    "about_description": "Conoce Mugixor, la startup vasca de movilidad sostenible. Soluciones de transporte eléctrico para jóvenes, estudiantes y trabajadores desde Euskadi para toda Europa.",
+    "contact_title": "Contacto Mugixor - Movilidad Eléctrica País Vasco | WhatsApp y Email",
+    "contact_description": "Contacta con Mugixor para información sobre bicicletas y patinetes eléctricos. Atención personalizada para estudiantes y trabajadores del País Vasco. WhatsApp y email disponibles."
   }
 }
 

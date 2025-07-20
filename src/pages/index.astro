@@ -1,5 +1,76 @@
 ---
-// Redirect to Spanish by default
-return Astro.redirect('/es/');
+// Auto-redirect based on user's browser language
 ---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cholloberri - Redirecting...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .loader {
+      text-align: center;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-top: 4px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="spinner"></div>
+    <p>Detectando idioma...</p>
+  </div>
+
+  <script>
+    // Language detection and redirect
+    function detectAndRedirect() {
+      // Get browser language
+      const browserLang = navigator.language || navigator.userLanguage;
+      const langCode = browserLang.split('-')[0].toLowerCase();
+      
+      // Supported languages mapping
+      const supportedLanguages = {
+        'es': '/es/',
+        'eu': '/eu/',
+        'fr': '/fr/',
+        'en': '/en/',
+        'nl': '/nl/',
+        'de': '/de/'
+      };
+      
+      // Default to Spanish if language not supported
+      const redirectPath = supportedLanguages[langCode] || '/es/';
+      
+      // Immediate redirect
+      window.location.replace(redirectPath);
+    }
+    
+    // Execute immediately
+    detectAndRedirect();
+  </script>
+</body>
+</html>
 

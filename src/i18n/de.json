@@ -5,46 +5,58 @@
     "about": "Über Uns",
     "contact": "Kontakt"
   },
-  "buttons": {
-    "order_whatsapp": "Über WhatsApp bestellen",
-    "view_details": "Details anzeigen",
-    "browse_products": "Alle Produkte anzeigen",
-    "start_chat": "Chat auf WhatsApp starten",
-    "send_email": "E-Mail senden"
-  },
   "home": {
-    "hero_title": "Die Zukunft Gestalten",
-    "hero_subtitle": "Unsere Vision für Sauberere Städte und Bessere Leben",
-    "hero_description": "Entdecken Sie innovative Produkte, die die Art und Weise transformieren, wie wir uns in eine nachhaltigere Zukunft bewegen.",
-    "featured_products": "Ausgewählte Produkte",
-    "why_choose_us": "Warum Uns Wählen?",
+    "hero_title": "Nachhaltige Mobilität für Studenten, Berufstätige und Arbeitnehmer",
+    "hero_subtitle": "Mugixor - Geboren im Baskenland, Entwickelt für Deutschland und die Schweiz",
+    "hero_description": "Zugängliche und zuverlässige elektrische Transportlösungen für Ihren Alltag. Elektrofahrräder, Elektroroller und mehr, speziell entwickelt für Studenten, Berufstätige und Arbeitnehmer in Berlin, München, Hamburg, Köln, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden, Hannover, Nürnberg, Zürich, Genf, Basel, Bern, Lausanne und allen deutschen und Schweizer Städten.",
+    "featured_products": "Empfohlene Produkte",
+    "why_choose_us": "Warum Mugixor wählen?",
     "sustainability": "Nachhaltigkeit",
-    "sustainability_desc": "Verpflichtet zu einer grüneren Zukunft",
-    "quality": "Qualität",
-    "quality_desc": "Produkte höchster Qualität",
-    "innovation": "Innovation",
-    "innovation_desc": "Modernste Technologie"
+    "sustainability_desc": "Wir reduzieren städtische Emissionen bei jeder Fahrt und tragen zu saubereren Städten in Deutschland, der Schweiz und ganz Europa bei.",
+    "quality": "Garantierte Qualität",
+    "quality_desc": "Zuverlässige und langlebige Produkte, entwickelt für den täglichen Gebrauch von Studenten und Arbeitnehmern in deutschen und Schweizer Städten.",
+    "innovation": "Praktische Innovation",
+    "innovation_desc": "Zugängliche Technologie, die wirklich funktioniert, ohne unnötige Komplikationen.",
+    "local_focus": "Deutsche und Schweizer Abdeckung",
+    "local_focus_desc": "Geboren im Baskenland, dienend für Studenten und Arbeitnehmer in Berlin, München, Hamburg, Köln, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden, Hannover, Nürnberg, Duisburg, Bochum, Wuppertal, Bielefeld, Bonn, Münster, Mannheim, Augsburg, Wiesbaden, Zürich, Genf, Basel, Bern, Lausanne, Winterthur, Luzern, St. Gallen, Lugano und allen deutschen und Schweizer Städten."
   },
   "products": {
-    "title": "Unsere Produkte",
-    "description": "Erkunden Sie unsere Auswahl an innovativen Produkten, die für eine nachhaltigere Zukunft entwickelt wurden."
+    "title": "Elektrischer Transport für Studenten und Arbeitnehmer in Deutschland und der Schweiz",
+    "description": "Entdecken Sie unser komplettes Sortiment an Elektrofahrzeugen: Elektrofahrräder, Elektroroller und nachhaltige Mobilitätslösungen, speziell entwickelt für Studenten, Berufstätige und Arbeitnehmer in Berlin, München, Hamburg, Köln, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden, Hannover, Nürnberg, Duisburg, Bochum, Wuppertal, Bielefeld, Bonn, Münster, Mannheim, Augsburg, Wiesbaden, Mönchengladbach, Braunschweig, Kiel, Aachen, Chemnitz, Halle, Magdeburg, Freiburg, Krefeld, Mainz, Lübeck, Erfurt, Oberhausen, Rostock, Kassel, Hagen, Potsdam, Saarbrücken, Hamm, Ludwigshafen, Mülheim, Oldenburg, Osnabrück, Leverkusen, Heidelberg, Solingen, Herne, Neuss, Darmstadt, Paderborn, Regensburg, Ingolstadt, Würzburg, Fürth, Wolfsburg, Offenbach, Ulm, Heilbronn, Pforzheim, Göttingen, Bottrop, Trier, Recklinghausen, Reutlingen, Bremerhaven, Koblenz, Bergisch Gladbach, Jena, Remscheid, Erlangen, Moers, Siegen, Hildesheim, Salzgitter, Cottbus, Witten, Zwickau, Bergheim, Gera, Iserlohn, Schwerin, Düren, Ratingen, Lünen, Marl, Velbert, Wilhelmshaven, Troisdorf, Minden, Norderstedt, Viersen, Rheine, Gladbeck, Dorsten, Castrop-Rauxel, Lüdenscheid, Bocholt, Detmold, Fulda, Plauen, Marburg, Bayreuth, Passau, Landshut, Stralsund, Sindelfingen, Rosenheim, Konstanz, Worms, Zürich, Genf, Basel, Bern, Lausanne, Winterthur, Luzern, St. Gallen, Lugano, Biel, Thun, Köniz, La Chaux-de-Fonds, Schaffhausen, Fribourg, Vernier, Chur, Neuchâtel, Uster, Sion, Lancy, Yverdon-les-Bains, Emmen, Zug, Kriens und allen deutschen und Schweizer Städten."
   },
   "about": {
-    "title": "Über Uns",
-    "subtitle": "Die Zukunft Gestalten: Unsere Vision für Sauberere Städte und Bessere Leben"
+    "title": "Über Mugixor",
+    "subtitle": "Nachhaltige Mobilität Geboren im Baskenland für Deutschland und die Schweiz"
   },
   "contact": {
-    "title": "Kontaktieren Sie Uns",
-    "subtitle": "Wir Sind Hier, um zu Helfen",
-    "description": "Ob Sie eine Frage zu unseren Produkten haben, eine innovative Idee für die Zukunft der nachhaltigen Mobilität oder einfach nur Hallo sagen möchten, wir würden uns freuen, von Ihnen zu hören.",
-    "whatsapp_title": "WhatsApp",
-    "whatsapp_desc": "Für die schnellste Antwort, insbesondere bei Anfragen zu Bestellungen oder Produkten.",
-    "email_title": "E-Mail",
-    "email_desc": "Für allgemeine Fragen, Partnerschaften oder Anfragen, die mehr Details erfordern. Wir bemühen uns, alle E-Mails innerhalb von 24 Geschäftsstunden zu beantworten."
+    "title": "Kontakt Mugixor",
+    "subtitle": "Bereit, Ihre Art der Fortbewegung in Deutschland oder der Schweiz zu ändern?",
+    "description": "Wir sind hier, um Ihnen zu helfen, die perfekte Mobilitätslösung für Ihre deutsche oder Schweizer Stadt zu finden. Kontaktieren Sie unser Team für weitere Informationen über unsere Elektrofahrräder und -roller, die in ganz Deutschland und der Schweiz verfügbar sind.",
+    "whatsapp_title": "Direkter WhatsApp",
+    "whatsapp_desc": "Schnelle Antwort für Studenten und Arbeitnehmer. Überprüfen Sie Preise, Verfügbarkeit und Finanzierungsoptionen für Ihre deutsche oder Schweizer Stadt.",
+    "email_title": "Professionelle E-Mail",
+    "email_desc": "Für detaillierte Anfragen, Unternehmen und institutionelle Partnerschaften in Deutschland und der Schweiz."
+  },
+  "buttons": {
+    "browse_products": "Produkte Anzeigen",
+    "view_details": "Details Anzeigen",
+    "order_whatsapp": "Per WhatsApp Bestellen",
+    "start_chat": "Chat Starten",
+    "send_email": "E-Mail Senden"
   },
   "footer": {
-    "copyright": "© 2025 Cholloberri. Alle Rechte vorbehalten.",
-    "quick_links": "Schnelle Links"
+    "quick_links": "Schnelle Links",
+    "copyright": "© 2025 Mugixor. Nachhaltige Mobilität vom Baskenland für Deutschland und die Schweiz."
+  },
+  "seo": {
+    "home_title": "Mugixor - Elektrofahrräder & E-Roller für Studenten | Deutschland Schweiz | Berlin München",
+    "home_description": "Beste Elektrofahrräder und E-Roller für Studenten und Arbeitnehmer in Deutschland und der Schweiz. Nachhaltiger Transport in Berlin, München, Hamburg, Köln, Frankfurt, Stuttgart, Zürich, Genf, Basel. Erschwingliche elektrische Mobilität mit deutscher und Schweizer Lieferung.",
+    "products_title": "Elektrofahrräder & E-Roller - Nachhaltiger Transport Deutschland Schweiz | Mugixor",
+    "products_description": "Kaufen Sie Elektrofahrräder und E-Roller in Deutschland und der Schweiz. Spezielle Studentenpreise. Lieferung nach Berlin, München, Hamburg, Köln, Frankfurt, Stuttgart, Düsseldorf, Leipzig, Zürich, Genf, Basel, Bern. Finanzierung für deutsche und Schweizer Kunden verfügbar.",
+    "about_title": "Über Mugixor - Deutsche und Schweizer Nachhaltige Mobilität Startup aus dem Baskenland",
+    "about_description": "Lernen Sie Mugixor kennen, das baskische Startup für nachhaltige Mobilität, das Deutschland und die Schweiz bedient. Elektrische Transportlösungen für Studenten, Berufstätige und Arbeitnehmer vom Baskenland zu deutschen und Schweizer Städten.",
+    "contact_title": "Kontakt Mugixor - Elektrische Mobilität Deutschland Schweiz | WhatsApp & E-Mail Support",
+    "contact_description": "Kontaktieren Sie Mugixor für Informationen über Elektrofahrräder und E-Roller in Deutschland und der Schweiz. Persönlicher Service für Studenten und Arbeitnehmer in Berlin, München, Hamburg, Köln, Frankfurt, Zürich, Genf, Basel. WhatsApp und E-Mail Support verfügbar."
   }
 }
 

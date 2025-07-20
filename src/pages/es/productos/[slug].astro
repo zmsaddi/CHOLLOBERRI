@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import ProductGallery from '../../../components/ProductGallery.astro';
 import { t } from '../../../i18n/index.js';
 
 // Import products
@@ -35,7 +36,7 @@ function generateWhatsAppMessage(productName: string, lang: string) {
 }
 
 const whatsappMessage = generateWhatsAppMessage(productData.name, lang);
-const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
+const whatsappUrl = `https://wa.me/34632759513?text=${whatsappMessage}`;
 ---
 
 <Layout title={`${productData.name} - Cholloberri`} description={productData.description.substring(0, 160)} lang={lang}>
@@ -52,12 +53,10 @@ const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
       
       <div class="product-detail">
         <div class="product-gallery">
-          <div class="main-image">
-            <img src={product.image} alt={productData.name} />
-            {product.featured && (
-              <span class="featured-badge">Destacado</span>
-            )}
-          </div>
+          <ProductGallery images={product.images} productName={productData.name} />
+          {product.featured && (
+            <span class="featured-badge">Destacado</span>
+          )}
         </div>
         
         <div class="product-info">
@@ -139,19 +138,6 @@ const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
     top: 100px;
   }
   
-  .main-image {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #f9fafb;
-  }
-  
-  .main-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
-  
   .featured-badge {
     position: absolute;
     top: 20px;
@@ -164,6 +150,7 @@ const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    z-index: 10;
   }
   
   .product-info {
@@ -252,10 +239,6 @@ const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
       position: static;
     }
     
-    .main-image img {
-      height: 300px;
-    }
-    
     .product-title {
       font-size: 2rem;
     }
@@ -271,6 +254,13 @@ const whatsappUrl = `https://wa.me/34600000000?text=${whatsappMessage}`;
     .btn-lg {
       width: 100%;
       text-align: center;
+    }
+    
+    .featured-badge {
+      top: 10px;
+      right: 10px;
+      padding: 6px 12px;
+      font-size: 0.75rem;
     }
   }
 </style>

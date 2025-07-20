@@ -5,46 +5,58 @@
     "about": "About Us",
     "contact": "Contact"
   },
-  "buttons": {
-    "order_whatsapp": "Order via WhatsApp",
-    "view_details": "View Details",
-    "browse_products": "View All Products",
-    "start_chat": "Start Chat on WhatsApp",
-    "send_email": "Send Email"
-  },
   "home": {
-    "hero_title": "Driving the Future",
-    "hero_subtitle": "Our Vision for Cleaner Cities and Better Lives",
-    "hero_description": "Discover innovative products that transform the way we move towards a more sustainable future.",
+    "hero_title": "Sustainable Mobility for Students, Young Professionals and Workers",
+    "hero_subtitle": "Mugixor - Born in Basque Country, Designed for Europe",
+    "hero_description": "Accessible and reliable electric transport solutions for your daily life. Electric bikes, electric scooters and more, specially designed for students, young professionals and workers across Europe - from London to Berlin, Paris to Amsterdam.",
     "featured_products": "Featured Products",
-    "why_choose_us": "Why Choose Us?",
+    "why_choose_us": "Why Choose Mugixor?",
     "sustainability": "Sustainability",
-    "sustainability_desc": "Committed to a greener future",
-    "quality": "Quality",
-    "quality_desc": "Highest quality products",
-    "innovation": "Innovation",
-    "innovation_desc": "Cutting-edge technology"
+    "sustainability_desc": "We reduce urban emissions with every journey, contributing to cleaner cities across Europe from Basque Country to major European capitals.",
+    "quality": "Guaranteed Quality",
+    "quality_desc": "Reliable and durable products, designed for daily use by students and workers in European cities.",
+    "innovation": "Practical Innovation",
+    "innovation_desc": "Accessible technology that really works, without unnecessary complications.",
+    "local_focus": "European Reach",
+    "local_focus_desc": "Born in Basque Country, serving students and workers in London, Paris, Berlin, Amsterdam, and major European cities."
   },
   "products": {
-    "title": "Our Products",
-    "description": "Explore our selection of innovative products designed for a more sustainable future."
+    "title": "Electric Transport for Students and Workers Across Europe",
+    "description": "Discover our complete range of electric vehicles: electric bikes, electric scooters and sustainable mobility solutions, specially designed for students, young professionals and workers in major European cities including London, Manchester, Birmingham, Paris, Lyon, Berlin, Munich, Amsterdam, Rotterdam and more."
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Driving the Future: Our Vision for Cleaner Cities and Better Lives"
+    "title": "About Mugixor",
+    "subtitle": "Sustainable Mobility Born in Basque Country for Europe"
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "We're Here to Help",
-    "description": "Whether you have a question about our products, an innovative idea for the future of sustainable mobility, or you just want to say hello, we'd love to hear from you.",
-    "whatsapp_title": "WhatsApp",
-    "whatsapp_desc": "For the fastest response, especially for inquiries about orders or products.",
-    "email_title": "Email",
-    "email_desc": "For general questions, partnerships, or inquiries that require more detail. We aim to respond to all emails within 24 business hours."
+    "title": "Contact Mugixor",
+    "subtitle": "Ready to change how you move around your city?",
+    "description": "We're here to help you find the perfect mobility solution for your European city. Contact our team for more information about our electric bikes and scooters available across Europe.",
+    "whatsapp_title": "Direct WhatsApp",
+    "whatsapp_desc": "Quick response for students and workers. Check prices, availability and financing options for your European city.",
+    "email_title": "Professional Email",
+    "email_desc": "For detailed inquiries, businesses and institutional partnerships across Europe."
+  },
+  "buttons": {
+    "browse_products": "View Products",
+    "view_details": "View Details",
+    "order_whatsapp": "Order via WhatsApp",
+    "start_chat": "Start Chat",
+    "send_email": "Send Email"
   },
   "footer": {
-    "copyright": "© 2025 Cholloberri. All rights reserved.",
-    "quick_links": "Quick Links"
+    "quick_links": "Quick Links",
+    "copyright": "© 2025 Mugixor. Sustainable mobility from Basque Country for Europe."
+  },
+  "seo": {
+    "home_title": "Mugixor - Electric Bikes & Scooters for Students | Europe | London Paris Berlin",
+    "home_description": "Best electric bikes and scooters for students and workers across Europe. Sustainable transport in London, Paris, Berlin, Amsterdam, Madrid. Affordable electric mobility solutions with European delivery.",
+    "products_title": "Electric Bikes & Scooters - Sustainable Transport Europe | Mugixor",
+    "products_description": "Buy electric bikes and scooters across Europe. Special student prices. Delivery to London, Paris, Berlin, Amsterdam, Madrid, Barcelona, Rome. Financing available for European customers.",
+    "about_title": "About Mugixor - European Sustainable Mobility Startup from Basque Country",
+    "about_description": "Meet Mugixor, the Basque sustainable mobility startup serving Europe. Electric transport solutions for students, young professionals and workers from Basque Country to major European cities.",
+    "contact_title": "Contact Mugixor - Electric Mobility Europe | WhatsApp & Email Support",
+    "contact_description": "Contact Mugixor for electric bikes and scooters information across Europe. Personalized service for students and workers in London, Paris, Berlin, Amsterdam. WhatsApp and email support available."
   }
 }
 

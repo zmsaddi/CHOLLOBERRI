@@ -15,7 +15,7 @@ const currentPath = Astro.url.pathname;
     <nav class="nav">
       <div class="nav-brand">
         <a href={`/${lang}/`} class="logo">
-          <span class="logo-text">Cholloberri</span>
+          <img src="/images/mugixor-logo.png" alt="Mugixor - Smart motion. Local roots. Global vision." class="logo-image" />
         </a>
       </div>
       
@@ -41,9 +41,7 @@ const currentPath = Astro.url.pathname;
       </div>
       
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
+        <img src="/images/mugixor-icon.png" alt="Menu Mugixor" class="menu-icon" />
       </button>
     </nav>
   </div>
@@ -65,18 +63,14 @@ const currentPath = Astro.url.pathname;
     padding: 1rem 0;
   }
   
-  .nav-brand .logo {
-    text-decoration: none;
-    color: #10b981;
-    font-weight: 700;
-    font-size: 1.5rem;
+  .logo-image {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s ease;
   }
   
-  .logo-text {
-    background: linear-gradient(135deg, #10b981, #059669);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .logo:hover .logo-image {
+    transform: scale(1.05);
   }
   
   .nav-menu {
@@ -122,25 +116,34 @@ const currentPath = Astro.url.pathname;
   
   .nav-toggle {
     display: none;
-    flex-direction: column;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
   
-  .hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: #374151;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
+  .nav-toggle:hover {
+    background: #f3f4f6;
+    transform: scale(1.1);
+  }
+  
+  .menu-icon {
+    width: 28px;
+    height: 28px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-toggle:active .menu-icon {
+    transform: rotate(90deg);
   }
   
   @media (max-width: 768px) {
     .nav-toggle {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     .nav-menu {
@@ -171,16 +174,9 @@ const currentPath = Astro.url.pathname;
       margin-top: 1rem;
     }
     
-    .nav-toggle.active .hamburger:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-    
-    .nav-toggle.active .hamburger:nth-child(2) {
-      opacity: 0;
-    }
-    
-    .nav-toggle.active .hamburger:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
+    .nav-toggle.active .menu-icon {
+      transform: rotate(180deg);
+      filter: brightness(0.8);
     }
   }
 </style>

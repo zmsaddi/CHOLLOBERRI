@@ -1,16 +1,131 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { getTranslation } from '../i18n/index.js';
-
 export interface Props {
-  title?: string;
+  title: string;
   description?: string;
   lang: string;
 }
 
-const { title = 'Cholloberri', description = '', lang } = Astro.props;
-const t = getTranslation(lang);
+const { title, description = "Mugixor - Sustainable mobility solutions for students, young professionals and workers across Europe", lang } = Astro.props;
+
+// Import translations
+import { t } from '../i18n/index.js';
+
+// Get current URL for canonical and hreflang
+const currentUrl = Astro.url;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+
+// Generate hreflang URLs
+const languages = ['es', 'eu', 'fr', 'en', 'nl', 'de'];
+const hreflangs = languages.map(l => ({
+  lang: l,
+  url: new URL(Astro.url.pathname.replace(`/${lang}/`, `/${l}/`), Astro.site)
+}));
+
+// Schema.org structured data
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mugixor",
+  "description": "European sustainable mobility startup from Basque Country",
+  "url": "https://cholloberri.eus",
+  "logo": "https://cholloberri.eus/images/mugixor-logo.png",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Basque Country, Spain"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    {
+      "@type": "Country", 
+      "name": "France"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Netherlands"
+    },
+    {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    },
+    {
+      "@type": "Country",
+      "name": "Luxembourg"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+34632759513",
+    "contactType": "customer service",
+    "availableLanguage": ["Spanish", "Basque", "French", "English", "Dutch", "German"]
+  },
+  "sameAs": [
+    "https://wa.me/34632759513"
+  ]
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Mugixor",
+  "description": "Sustainable mobility solutions - Electric bikes, electric scooters for students and workers",
+  "url": "https://cholloberri.eus",
+  "telephone": "+34632759513",
+  "email": "info@cholloberri.eus",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ES",
+    "addressRegion": "Basque Country"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "43.2630",
+    "longitude": "-2.9350"
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "€€",
+  "servesCuisine": "Electric Mobility",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Electric Mobility Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Electric Bikes",
+          "category": "Electric Bicycle"
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Electric Scooters",
+          "category": "Electric Scooter"
+        }
+      }
+    ]
+  }
+};
+
+// Import components
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -19,108 +134,94 @@ const t = getTranslation(lang);
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="electric bikes, electric scooters, sustainable mobility, students, workers, Europe, Basque Country, Mugixor" />
+    <meta name="author" content="Mugixor" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://cholloberri.eus/images/mugixor-logo.png" />
+    <meta property="og:site_name" content="Mugixor" />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : lang === 'eu' ? 'eu_ES' : lang === 'fr' ? 'fr_FR' : lang === 'en' ? 'en_GB' : lang === 'nl' ? 'nl_NL' : 'de_DE'} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://cholloberri.eus/images/mugixor-logo.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- Hreflang -->
+    {hreflangs.map(({ lang: hrefLang, url }) => (
+      <link rel="alternate" hreflang={hrefLang} href={url} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={new URL('/es/', Astro.site)} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/mugixor-favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/mugixor-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/mugixor-favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/mugixor-favicon.png" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://wa.me" />
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID');
+    </script> -->
+
     <style>
-      * {
+      /* CSS Reset and Base Styles */
+      *, *::before, *::after {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+      }
+      
+      html {
+        font-family: 'Inter', system-ui, sans-serif;
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
       }
       
       body {
-        font-family: 'Inter', sans-serif;
         line-height: 1.6;
-        color: #333;
+        color: #1f2937;
         background-color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       
+      /* Layout Utilities */
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
-      }
-      
-      .btn {
-        display: inline-block;
-        padding: 12px 24px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-      }
-      
-      .btn-primary {
-        background-color: #10b981;
-        color: white;
-      }
-      
-      .btn-primary:hover {
-        background-color: #059669;
-        transform: translateY(-2px);
-      }
-      
-      .btn-secondary {
-        background-color: #f3f4f6;
-        color: #374151;
-        border: 1px solid #d1d5db;
-      }
-      
-      .btn-secondary:hover {
-        background-color: #e5e7eb;
-      }
-      
-      .btn-whatsapp {
-        background-color: #25d366;
-        color: white;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-      
-      .btn-whatsapp:hover {
-        background-color: #128c7e;
-        transform: translateY(-2px);
-      }
-      
-      .grid {
-        display: grid;
-        gap: 24px;
-      }
-      
-      .grid-2 {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
-      
-      .grid-3 {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      }
-      
-      .grid-4 {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      }
-      
-      .card {
-        background: white;
-        border-radius: 12px;
-        padding: 24px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
-      
-      .card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
       }
       
       .section {
@@ -131,8 +232,43 @@ const t = getTranslation(lang);
         padding: 60px 0;
       }
       
+      /* Grid System */
+      .grid {
+        display: grid;
+        gap: 30px;
+      }
+      
+      .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      
+      .grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      
+      .grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      
+      /* Typography */
       .text-center {
         text-align: center;
+      }
+      
+      .text-left {
+        text-align: left;
+      }
+      
+      .text-right {
+        text-align: right;
+      }
+      
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      
+      .text-base {
+        font-size: 1rem;
       }
       
       .text-lg {
@@ -155,12 +291,33 @@ const t = getTranslation(lang);
         font-size: 2.25rem;
       }
       
-      .font-bold {
-        font-weight: 700;
+      .text-5xl {
+        font-size: 3rem;
+      }
+      
+      .font-light {
+        font-weight: 300;
+      }
+      
+      .font-normal {
+        font-weight: 400;
+      }
+      
+      .font-medium {
+        font-weight: 500;
       }
       
       .font-semibold {
         font-weight: 600;
+      }
+      
+      .font-bold {
+        font-weight: 700;
+      }
+      
+      /* Spacing */
+      .mb-2 {
+        margin-bottom: 0.5rem;
       }
       
       .mb-4 {
@@ -179,18 +336,89 @@ const t = getTranslation(lang);
         margin-bottom: 3rem;
       }
       
+      .mt-4 {
+        margin-top: 1rem;
+      }
+      
       .mt-8 {
         margin-top: 2rem;
       }
       
+      /* Colors */
       .text-gray-600 {
         color: #6b7280;
+      }
+      
+      .text-gray-800 {
+        color: #1f2937;
       }
       
       .text-green-600 {
         color: #10b981;
       }
       
+      .text-blue-600 {
+        color: #2563eb;
+      }
+      
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      
+      .btn-primary {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+      }
+      
+      .btn-primary:hover {
+        background: linear-gradient(135deg, #059669, #047857);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+      }
+      
+      .btn-secondary {
+        background: #f3f4f6;
+        color: #374151;
+        border: 1px solid #d1d5db;
+      }
+      
+      .btn-secondary:hover {
+        background: #e5e7eb;
+        border-color: #9ca3af;
+      }
+      
+      .btn-lg {
+        padding: 16px 32px;
+        font-size: 1.125rem;
+      }
+      
+      /* Cards */
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+      }
+      
+      .card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+      
+      /* Responsive Design */
       @media (max-width: 768px) {
         .container {
           padding: 0 16px;
@@ -198,6 +426,10 @@ const t = getTranslation(lang);
         
         .section {
           padding: 60px 0;
+        }
+        
+        .section-sm {
+          padding: 40px 0;
         }
         
         .text-4xl {
@@ -208,6 +440,14 @@ const t = getTranslation(lang);
           font-size: 1.5rem;
         }
         
+        .text-5xl {
+          font-size: 2.25rem;
+        }
+        
+        .grid {
+          gap: 20px;
+        }
+        
         .grid-3 {
           grid-template-columns: 1fr;
         }
@@ -215,6 +455,62 @@ const t = getTranslation(lang);
         .grid-4 {
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
+        
+        /* Better touch targets for mobile */
+        .btn, button, a[class*="btn"] {
+          min-height: 44px;
+          padding: 12px 20px;
+          font-size: 0.9rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        /* Improved typography for mobile */
+        h1, h2, h3 {
+          line-height: 1.2;
+        }
+        
+        p {
+          line-height: 1.6;
+        }
+        
+        /* Better spacing */
+        .mb-12 {
+          margin-bottom: 2rem;
+        }
+        
+        .mb-8 {
+          margin-bottom: 1.5rem;
+        }
+      }
+      
+      /* Performance optimizations */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /* Accessibility improvements */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      
+      /* Focus styles for accessibility */
+      .btn:focus,
+      a:focus,
+      button:focus {
+        outline: 2px solid #10b981;
+        outline-offset: 2px;
       }
     </style>
   </head>
@@ -224,6 +520,21 @@ const t = getTranslation(lang);
       <slot />
     </main>
     <Footer lang={lang} />
+    
+    <!-- Service Worker for PWA (optional) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
 
