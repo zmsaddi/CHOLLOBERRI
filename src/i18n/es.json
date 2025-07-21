@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Smart motion. Local roots. Global vision.",
+    "subtitle": "Líder en movilidad sostenible en Europa. Soluciones innovadoras para estudiantes, profesionales y trabajadores.",
+    "viewProducts": "Ver Productos",
+    "contact": "Contactar"
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "subtitle": "Descubre nuestra gama completa de vehículos eléctricos diseñados para la movilidad urbana moderna",
+    "featured": "Productos Destacados",
+    "featuredSubtitle": "Descubre nuestra selección de vehículos eléctricos más populares",
+    "viewAll": "Ver Todos los Productos",
+    "search": "Buscar productos...",
+    "categories": {
+      "all": "Todos los Productos",
+      "bike": "Bicicletas Eléctricas",
+      "scooter": "Patinetes",
+      "cargo": "Cargo Bikes",
+      "skateboard": "Skateboards"
+    },
+    "noResults": "No se encontraron productos",
+    "noResultsDesc": "Intenta con otros términos de búsqueda o selecciona una categoría diferente",
+    "whatsapp": "WhatsApp",
+    "call": "Llamar",
+    "email": "Enviar Email",
+    "features": "Características Principales",
+    "specifications": "Especificaciones Técnicas",
+    "additionalInfo": "Información Adicional",
+    "relatedProducts": "También te puede interesar",
+    "productNotFound": "Producto no encontrado",
+    "productNotFoundDesc": "El producto que buscas no existe.",
+    "backToProducts": "Volver a Productos"
+  },
+  "about": {
+    "title": "Sobre Mugixor",
+    "subtitle": "Somos pioneros en movilidad sostenible, conectando Europa con soluciones de transporte innovadoras y ecológicas",
+    "ourStory": "Nuestra Historia",
+    "storyText1": "Desde nuestras raíces locales hasta nuestra visión global, Mugixor se dedica a revolucionar la forma en que las personas se mueven por las ciudades europeas. Fundada con la misión de hacer que la movilidad urbana sea más accesible, eficiente y respetuosa con el medio ambiente.",
+    "storyText2": "Ofrecemos una amplia gama de vehículos eléctricos que combinan tecnología avanzada, diseño elegante y sostenibilidad ambiental para estudiantes, profesionales y trabajadores en más de 900 ciudades europeas.",
+    "mission": "Nuestra Misión",
+    "missionText": "Transformar la movilidad urbana europea mediante soluciones eléctricas innovadoras, accesibles y sostenibles que mejoren la calidad de vida de nuestros usuarios.",
+    "vision": "Nuestra Visión",
+    "visionText": "Ser la empresa líder en movilidad eléctrica en Europa, creando un futuro donde el transporte urbano sea 100% sostenible y eficiente.",
+    "values": "Nuestros Valores",
+    "valuesText": "Innovación, sostenibilidad, calidad y compromiso con nuestros clientes. Cada producto refleja nuestra dedicación a la excelencia.",
+    "whyChoose": "¿Por qué elegir Mugixor?",
+    "sustainability": "Sostenibilidad",
+    "sustainabilityText": "Todos nuestros productos son 100% eléctricos, contribuyendo a un futuro más limpio y sostenible.",
+    "technology": "Tecnología Avanzada",
+    "technologyText": "Incorporamos las últimas innovaciones en movilidad eléctrica para ofrecer la mejor experiencia.",
+    "quality": "Calidad Garantizada",
+    "qualityText": "Ofrecemos productos de alta calidad con garantías extendidas y soporte técnico completo.",
+    "service": "Atención Personalizada",
+    "serviceText": "Nuestro equipo está disponible 24/7 para brindarte el mejor servicio y asesoramiento."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes preguntas? Estamos aquí para ayudarte. Contáctanos por cualquier medio",
+    "phone": "Teléfono",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "locations": "Ubicaciones",
+    "locationsText": "900+ ciudades en Europa",
+    "sendMessage": "Envíanos un mensaje",
+    "name": "Nombre",
+    "nameRequired": "Nombre *",
+    "emailRequired": "Email *",
+    "message": "Mensaje",
+    "messageRequired": "Mensaje *",
+    "sendButton": "Enviar Mensaje",
+    "messageSent": "Mensaje enviado correctamente"
+  },
+  "stats": {
+    "cities": "900+",
+    "citiesText": "Ciudades en Europa",
+    "customers": "50,000+",
+    "customersText": "Clientes Satisfechos",
+    "electric": "100%",
+    "electricText": "Eléctrico y Sostenible",
+    "support": "24/7",
+    "supportText": "Soporte al Cliente"
+  },
+  "productData": {
+    "ecoBike": {
+      "name": "Bicicleta Urbana Eco",
+      "description": "Perfecta para estudiantes y profesionales urbanos. Batería de larga duración hasta 100 km.",
+      "features": [
+        "Batería de larga duración hasta 100 km",
+        "Motor eléctrico silencioso",
+        "Diseño urbano elegante",
+        "Sistema de frenado regenerativo",
+        "Luces LED integradas",
+        "Portaequipajes incluido"
+      ]
+    },
+    "scooterPro": {
+      "name": "Patinete Inteligente Pro",
+      "description": "Movilidad ágil para trabajadores urbanos. Diseño plegable ultracompacto.",
+      "features": [
+        "Diseño plegable ultracompacto",
+        "Aplicación móvil inteligente",
+        "Sistema antirrobo GPS",
+        "Neumáticos antipinchazos",
+        "Pantalla LED informativa",
+        "Carga rápida USB-C"
+      ]
+    },
+    "cargoMaster": {
+      "name": "Cargo Master XL",
+      "description": "Solución de carga para familias y empresas. Capacidad de carga hasta 100kg.",
+      "features": [
+        "Capacidad de carga hasta 100kg",
+        "Compartimento de carga impermeable",
+        "Asientos para niños opcionales",
+        "Sistema de estabilización avanzado",
+        "Frenos de disco hidráulicos",
+        "Batería extraíble"
+      ]
+    },
+    "skateboardX": {
+      "name": "Monopatín Eléctrico X",
+      "description": "Diversión y movilidad para jóvenes urbanos. Control remoto inalámbrico.",
+      "features": [
+        "Control remoto inalámbrico",
+        "Luces LED personalizables",
+        "Tabla de bambú ecológica",
+        "Motores duales potentes",
+        "Aplicación móvil",
+        "Resistente al agua IP54"
+      ]
+    }
+  },
+  "whatsappMessages": {
+    "general": "Hola, me interesa conocer más sobre los productos de Mugixor",
+    "product": "Hola, me interesa el producto \"{productName}\". ¿Podrían darme más información sobre precio, disponibilidad y características?"
+  },
+  "additionalInfo": [
+    "🚚 Envío gratuito a toda Europa",
+    "🔧 Instalación y configuración incluida",
+    "📞 Soporte técnico 24/7",
+    "🔄 Garantía extendida disponible",
+    "💳 Financiación disponible"
+  ]
+}
+
