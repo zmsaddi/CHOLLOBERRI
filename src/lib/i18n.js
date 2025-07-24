@@ -11,7 +11,7 @@ export const languages = [
   { 
     code: 'eu', 
     name: 'Euskera', 
-    flag: '🏴',
+    flag: '/src/assets/basque-flag.png',
     nativeName: 'Euskera'
   },
   { 
@@ -261,7 +261,31 @@ export const translations = {
       '📞 Laguntza teknikoa 24/7',
       '🔄 Berme luzatua eskuragarri',
       '💳 Finantzaketa eskuragarri'
-    ]
+    ],
+    
+    // Stats
+    stats: {
+      activeUsers: 'Erabiltzaile Aktiboak',
+      europeanCities: 'Hiri Europarrak',
+      cleanEnergy: 'Energia Garbia',
+      technicalSupport: 'Laguntza Teknikoa'
+    },
+    
+    // Features
+    features: {
+      cleanEnergy: {
+        title: 'Energia 100% Garbia',
+        description: 'Gure ibilgailu guztiak energia elektriko garbiarekin funtzionatzen dute, etorkizun jasangarriago bati lagunduz.'
+      },
+      europeanCoverage: {
+        title: 'Europako Estaldura',
+        description: 'Europa osoko 900 hiri baino gehiagoetara sarbidea. Mugikortasuna mugarik gabe zure bizimodu-erarentzat.'
+      },
+      support247: {
+        title: '24/7 Laguntza',
+        description: 'Gure taldea 24 orduz eskuragarri dago edozein galdera edo arazo teknikotan laguntzeko.'
+      }
+    }
   },
   
   en: {
